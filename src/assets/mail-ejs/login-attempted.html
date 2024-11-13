@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+          sans-serif;
+      }
+      .container {
+        width: 800px;
+        margin: 0 auto;
+      }
+      .logo {
+        width: 120px;
+        height: 28px;
+        object-fit: contain;
+        margin-top: 50px;
+      }
+      .title {
+        color: #161a3f;
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: -0.78px;
+      }
+      .payment-details {
+        color: #161a3f;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -0.54px;
+      }
+      .payment-info {
+        border-top: 1px solid #161a3f;
+        margin-top: 20px;
+        width: 100%;
+        border-spacing: 0;
+      }
+
+      .payment-info tbody tr td {
+        padding: 15px;
+        color: #161a3f;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.42px;
+        border-bottom: 1px solid #eaeaf4;
+      }
+      .payment-info tbody tr td:first-child {
+        color: #5c5f79;
+        background: #fafafd;
+      }
+      ul {
+        margin-top: 20px;
+        padding-left: 15px;
+      }
+      ul li {
+        color: #8d8fa2;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: -0.39px;
+      }
+
+      .button {
+        padding: 14px 48px;
+        border: 1px solid #2d40ff;
+        background-color: #2d40ff;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.28px;
+      }
+      .table-button {
+        margin-top: 30px;
+        width: 100%;
+      }
+      .table-button tr td {
+        text-align: center;
+      }
+      .footer {
+        margin-top: 50px;
+      }
+      .footer .phone-icon {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+      }
+      .footer .phone {
+        color: #161a3f;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 22px; /* 91.667% */
+        letter-spacing: -0.96px;
+        display: inline-block;
+      }
+      .footer .work-hour {
+        color: #161a3f;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        vertical-align: top;
+        letter-spacing: -0.56px;
+      }
+      .links span {
+        display: inline-block;
+        color: #2d40ff;
+        font-size: 13px;
+        line-height: 26px;
+        letter-spacing: -0.52px;
+        margin-top: 30px;
+      }
+      .info span {
+        color: #5b5d75;
+        font-size: 13px;
+        line-height: 26px;
+        letter-spacing: -0.52px;
+        margin-top: 10px;
+      }
+      .footer-logo {
+        margin-top: 11px;
+      }
+      .footer-logo span {
+        color: #5b5d75;
+        font-size: 13px;
+        line-height: 26px;
+        letter-spacing: -0.52px;
+        vertical-align: top;
+      }
+      .footer-logo img {
+        width: 23px;
+        height: 23px;
+        object-fit: contain;
+      }
+      .booking-code {
+        text-align: center;
+      }
+
+      .booking-code p:first-child {
+        color: #161a3f;
+        font-size: 14px;
+        letter-spacing: -0.42px;
+      }
+      .booking-code p:last-child {
+        color: #161a3f;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: -0.4px;
+      }
+      .booking-info p:first-child {
+        color: #161a3f;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: -0.45px;
+      }
+      .booking-info span {
+        color: #161a3f;
+        font-size: 14px;
+        letter-spacing: -0.28px;
+        font-weight: 400;
+      }
+      .booking-info p:last-child {
+        color: #ff176b;
+        font-size: 20px;
+        letter-spacing: -0.4px;
+      }
+
+      .hotel-info thead tr th {
+        padding: 15px 30px;
+        text-align: left;
+        color: #161a3f;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.42px;
+        background: #fafafd;
+      }
+      .hotel-info tbody tr td {
+        color: #161a3f;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.42px;
+        background-color: #fff !important;
+        padding: 15px 30px;
+      }
+      .booked-amount {
+        color: #161a3f;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -0.54px;
+        margin-top: 30px;
+      }
+      h4 {
+        color: #161a3f;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.42px;
+        margin: 16px 0 50px;
+      }
+      h4 a {
+        color: #06f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="logo"
+        src="https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/Frame.jpg?alt=media&token=ed6e3e96-6c5d-4112-b09f-b5ad3fcd470b"
+      />
+      <h1 class="title">
+        귀하의 계정에서 비정상적인 로그인 시도가 감지되었습니다.
+      </h1>
+      <h4>
+        <a href="mailto: <%=email%>"><%=email%></a> 계정이 새로운 IP 주소에서
+        접속된 것으로 확인되었습니다.
+      </h4>
+
+      <p class="booked-amount">결제내역</p>
+      <table class="payment-info hotel-info">
+        <thead>
+          <tr>
+            <th>접속일시</th>
+            <th>IP 주소</th>
+            <th>OS</th>
+            <th>브라우저</th>
+            <th>디바이스</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%=date%></td>
+            <td><%=ipAddress%></td>
+            <td><%=os%></td>
+            <td><%=browser%></td>
+            <td><%=deviceType%></td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>
+          이 활동을 인식하지 못하시나요? 비밀번호를 재설정하고 즉시
+          <a href="mailto:wafl@wafflestay.kr">wafl@wafflestay.kr</a>으로
+          연락주세요.
+        </li>
+        <li>이 메시지는 자동으로 발송되는 메시지입니다. 회신하지 마세요.</li>
+      </ul>
+      <table class="table-button">
+        <tr>
+          <td>
+            <a href="<%=resetPasswordUrl%>" target="_blank">
+              <button class="button">비밀번호 변경</button>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+{
+  "$__": {
+    "activePaths": {
+      "paths": {
+        "holder.idPax": "init",
+        "attributes.language": "init",
+        "attributes.status": "init",
+        "attributes.locator": "init",
+        "status": "init",
+        "_id": "init",
+        "externalBookingReference": "init",
+        "paxes": "init",
+        "agenciesData": "init",
+        "items": "init",
+        "createdAt": "init",
+        "updatedAt": "init",
+        "__v": "init"
+      },
+      "states": {
+        "require": {},
+        "init": {
+          "_id": true,
+          "status": true,
+          "attributes.locator": true,
+          "attributes.status": true,
+          "attributes.language": true,
+          "externalBookingReference": true,
+          "holder.idPax": true,
+          "paxes": true,
+          "agenciesData": true,
+          "items": true,
+          "createdAt": true,
+          "updatedAt": true,
+          "__v": true
+        }
+      }
+    },
+    "skipId": true
+  },
+  "$isNew": false,
+  "_doc": {
+    "attributes": {
+      "locator": "5J1LPH",
+      "status": "PAG",
+      "language": "ko"
+    },
+    "holder": {
+      "idPax": 3
+    },
+    "payment": {},
+    "warning": {},
+    "cancelInfo": {},
+    "_id": "6667e1bac225daa4571f2b7b",
+    "status": "COMPLETED",
+    "externalBookingReference": "6667e145c225daa4571f2b67",
+    "paxes": [
+      {
+        "idPax": 1,
+        "name": "salohiddin",
+        "surname": "jaloliddinv",
+        "age": 35,
+        "phoneNumber": "",
+        "email": "saloh224@gmail.com",
+        "nationality": "KR",
+        "_id": "6667e1bac225daa4571f2b7c"
+      },
+      {
+        "idPax": 2,
+        "name": "Synaptic",
+        "surname": "Wave",
+        "age": 35,
+        "phoneNumber": "",
+        "_id": "6667e1bac225daa4571f2b7d"
+      },
+      {
+        "idPax": 3,
+        "name": "salohiddin",
+        "surname": "jaloliddinv",
+        "age": 35,
+        "phoneNumber": "",
+        "email": "saloh224@gmail.com",
+        "nationality": "KR",
+        "_id": "6667e1bac225daa4571f2b7e"
+      }
+    ],
+    "agenciesData": [
+      {
+        "referencedAgency": false,
+        "agencyCode": "634",
+        "agencyName": "WaffleStay",
+        "agencyHandledBy": "XML Agent",
+        "agencyEmail": "jamshid@swave.kr",
+        "agencyReference": "6667e145c225daa4571f2b67",
+        "_id": "6667e1bac225daa4571f2b7f"
+      },
+      {
+        "referencedAgency": true,
+        "agencyCode": "0",
+        "_id": "6667e1bac225daa4571f2b80"
+      }
+    ],
+    "items": [
+      {
+        "attributes": {
+          "itemId": "5803",
+          "status": "OK",
+          "start": "2024-07-11",
+          "end": "2024-07-12"
+        },
+        "prices": {
+          "totalFixAmounts": {
+            "service": {
+              "amount": "77349"
+            },
+            "gross": "77349",
+            "net": "77349",
+            "type": "S",
+            "currencyType": "KRW"
+          },
+          "breakdown": [
+            {
+              "concept": "Base",
+              "items": [
+                {
+                  "amount": "77349",
+                  "_id": "6667e1bac225daa4571f2b83"
+                }
+              ],
+              "_id": "6667e1bac225daa4571f2b82"
+            }
+          ]
+        },
+        "cancellationPolicy": {
+          "firstDayCostCancellation": {
+            "value": "2024-07-08",
+            "hour": "23:59"
+          },
+          "currencyCode": "KRW",
+          "type": "S",
+          "description": "* Cancelling from 2024/06/10 at 00:00:00 up to 2024/07/08 at 23:58:59: 0 KRW * Cancelling from 2024/07/08 at 23:59:00 up to 2024/07/11 at 00:00:00: ₩&nbsp 77349   *Date and time is calculated based on local time of destination (GMT +04:00)",
+          "policyRules": [
+            {
+              "dateFrom": "2024-06-10",
+              "dateFromHour": "00:00",
+              "dateTo": "2024-07-08",
+              "dateToHour": "23:58",
+              "type": "V",
+              "fixedPrice": 0,
+              "percentPrice": 0,
+              "nights": 0,
+              "applicationTypeNights": "Average",
+              "_id": "6667e1bac225daa4571f2b84"
+            },
+            {
+              "dateFrom": "2024-07-08",
+              "dateFromHour": "23:59",
+              "dateTo": "2024-07-11",
+              "dateToHour": "00:00",
+              "type": "V",
+              "fixedPrice": 77348.54,
+              "percentPrice": 0,
+              "nights": 0,
+              "applicationTypeNights": "Average",
+              "_id": "6667e1bac225daa4571f2b85"
+            }
+          ]
+        },
+        "hotelInfo": {
+          "code": "JP010084",
+          "name": "Landmark Summit Hotel",
+          "address": "Al Rigga Street, Behind Commercial Bank Building, Dubai, United Arab Emirates (DXB)"
+        },
+        "comments": [
+          {
+            "value": "<b>Supplements</b><br/>Payment at destination: 15,00 AED<br/><br/><b>Room name</b><br/>Double deluxe\r\n<br/><br/><b>Details</b><br/>Car park NO.<br> Check-in hour 14:00 - .<br> Minimum check-in age 18.",
+            "type": "HOT",
+            "_id": "6667e1bac225daa4571f2b86"
+          }
+        ],
+        "hotelRooms": [
+          {
+            "roomCategory": {
+              "value": "",
+              "type": ""
+            },
+            "name": "Double deluxe",
+            "relPaxes": [
+              {
+                "idPax": 1,
+                "_id": "6667e1bac225daa4571f2b88"
+              },
+              {
+                "idPax": 2,
+                "_id": "6667e1bac225daa4571f2b89"
+              }
+            ],
+            "_id": "6667e1bac225daa4571f2b87"
+          }
+        ],
+        "_id": "6667e1bac225daa4571f2b81"
+      }
+    ],
+    "createdAt": "2024-06-11T05:33:46.263Z",
+    "updatedAt": "2024-06-11T05:33:46.263Z",
+    "__v": 0
+  },
+  "payment": {
+    "paymentMethod": "CARD",
+    "currencyType": "KRW",
+    "amount": 77349
+  }
+}

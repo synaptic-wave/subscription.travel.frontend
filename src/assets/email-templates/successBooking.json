@@ -1,0 +1,278 @@
+{
+  "code": 2000,
+  "message": "SUCCESS",
+  "data": {
+    "attributes": {
+      "locator": "HH9M3W",
+      "status": "PAG",
+      "language": "en"
+    },
+    "holder": {
+      "idPax": 6
+    },
+    "payment": {
+      "type": "C"
+    },
+    "status": "COMPLETED",
+    "externalBookingReference": "6637ac2b5dfdc4834774bbc3",
+    "paxes": [
+      {
+        "idPax": 1,
+        "name": "salohiddin",
+        "surname": "jaloliddinov",
+        "age": 35,
+        "phoneNumber": "",
+        "email": "saloh224@gmail.com",
+        "nationality": "KR",
+        "_id": "6637ac6d5dfdc4834774bbce"
+      },
+      {
+        "idPax": 2,
+        "name": "zayniddin",
+        "surname": "jaloliddinov",
+        "age": 35,
+        "phoneNumber": "",
+        "_id": "6637ac6d5dfdc4834774bbcf"
+      },
+      {
+        "idPax": 3,
+        "name": "husniddin",
+        "surname": "jaloliddinov",
+        "age": 2,
+        "phoneNumber": "",
+        "_id": "6637ac6d5dfdc4834774bbd0"
+      },
+      {
+        "idPax": 4,
+        "name": "bekzod",
+        "surname": "umarov",
+        "age": 35,
+        "phoneNumber": "",
+        "_id": "6637ac6d5dfdc4834774bbd1"
+      },
+      {
+        "idPax": 5,
+        "name": "sanjar",
+        "surname": "umarov",
+        "age": 35,
+        "phoneNumber": "",
+        "_id": "6637ac6d5dfdc4834774bbd2"
+      },
+      {
+        "idPax": 6,
+        "name": "salohiddin",
+        "surname": "jaloliddinov",
+        "age": 35,
+        "phoneNumber": "",
+        "email": "saloh224@gmail.com",
+        "nationality": "KR",
+        "_id": "6637ac6d5dfdc4834774bbd3"
+      }
+    ],
+    "agenciesData": [
+      {
+        "referencedAgency": false,
+        "agencyCode": "1752",
+        "agencyName": "Test XML Synaptic Wave",
+        "agencyHandledBy": "Test XML Synaptic Wave",
+        "agencyEmail": "skim@swave.kr",
+        "agencyReference": "6637ac2b5dfdc4834774bbc3",
+        "_id": "6637ac6d5dfdc4834774bbd4"
+      },
+      {
+        "referencedAgency": true,
+        "agencyCode": "0",
+        "_id": "6637ac6d5dfdc4834774bbd5"
+      }
+    ],
+    "items": [
+      {
+        "attributes": {
+          "itemId": "504142",
+          "status": "OK",
+          "start": "2024-06-06",
+          "end": "2024-06-07"
+        },
+        "prices": {
+          "totalFixAmounts": {
+            "service": {
+              "amount": "300"
+            },
+            "gross": "300",
+            "net": "300",
+            "type": "S",
+            "currencyType": "USD"
+          },
+          "breakdown": [
+            {
+              "concept": "Base",
+              "items": [
+                {
+                  "amount": "157.89",
+                  "_id": "6637ac6d5dfdc4834774bbd8"
+                },
+                {
+                  "amount": "0",
+                  "_id": "6637ac6d5dfdc4834774bbd9"
+                },
+                {
+                  "amount": "0",
+                  "_id": "6637ac6d5dfdc4834774bbda"
+                },
+                {
+                  "amount": "157.89",
+                  "_id": "6637ac6d5dfdc4834774bbdb"
+                },
+                {
+                  "amount": "0",
+                  "_id": "6637ac6d5dfdc4834774bbdc"
+                }
+              ],
+              "_id": "6637ac6d5dfdc4834774bbd7"
+            },
+            {
+              "concept": "Test Offer (default)",
+              "items": [
+                {
+                  "amount": "-7.89",
+                  "_id": "6637ac6d5dfdc4834774bbde"
+                },
+                {
+                  "amount": "-7.89",
+                  "_id": "6637ac6d5dfdc4834774bbdf"
+                }
+              ],
+              "_id": "6637ac6d5dfdc4834774bbdd"
+            }
+          ]
+        },
+        "cancellationPolicy": {
+          "firstDayCostCancellation": {
+            "value": "2024-05-30",
+            "hour": "00:00"
+          },
+          "currencyCode": "USD",
+          "type": "S",
+          "description": "<div><strong>EN Value</strong></div><div>&nbsp;</div><div><span style=\"color: red;\">Can Accept</span> <span style=\"background-color: yellow;\">HTML Code</span>&nbsp;</div>",
+          "policyRules": [
+            {
+              "from": "0",
+              "to": "3",
+              "dateFrom": "2024-06-03",
+              "dateFromHour": "00:00",
+              "dateTo": "2024-06-07",
+              "dateToHour": "00:00",
+              "type": "V",
+              "fixedPrice": 0,
+              "percentPrice": 100,
+              "nights": 0,
+              "applicationTypeNights": "Average",
+              "_id": "6637ac6d5dfdc4834774bbe0"
+            },
+            {
+              "from": "4",
+              "to": "7",
+              "dateFrom": "2024-05-30",
+              "dateFromHour": "00:00",
+              "dateTo": "2024-06-03",
+              "dateToHour": "00:00",
+              "type": "V",
+              "fixedPrice": 0,
+              "percentPrice": 25,
+              "nights": 0,
+              "applicationTypeNights": "Average",
+              "_id": "6637ac6d5dfdc4834774bbe1"
+            },
+            {
+              "from": "8",
+              "dateFrom": "2024-05-05",
+              "dateFromHour": "00:00",
+              "dateTo": "2024-05-30",
+              "dateToHour": "00:00",
+              "type": "V",
+              "fixedPrice": 0,
+              "percentPrice": 0,
+              "nights": 0,
+              "applicationTypeNights": "Average",
+              "_id": "6637ac6d5dfdc4834774bbe2"
+            }
+          ]
+        },
+        "hotelInfo": {
+          "hotelCategory": {
+            "value": "3 Stars",
+            "type": "3est"
+          },
+          "code": "JP046300",
+          "name": "Allsun Hotel Pil·larí Playa UAT",
+          "address": "Carrer Marbella, 24, 07610 Palma, Islas Baleares, Spain"
+        },
+        "board": {
+          "value": "Room Only",
+          "type": "SA"
+        },
+        "additionalElements": {
+          "hotelOffer": {
+            "code": "323059",
+            "type": "M",
+            "name": "Test Offer (default)",
+            "description": "Additional conditions of the offer may be specified here"
+          }
+        },
+        "comments": [
+          {
+            "value": "* 13/06/2018 - 31/12/2030: Please note that on this field hotels have the possibility of supplying you with important information like:<br><br>- Additional taxes (like, for example, a city tax).<br>- Additional features (like, for example, a detailed explanation of a promotion)<br>- Additional warnings (like, for example, the pool being closed due to renovations)<br>- Additional information (like, for example, the emergency phone)<br><br>Among other examples.<br>",
+            "type": "HOT",
+            "_id": "6637ac6d5dfdc4834774bbe3"
+          }
+        ],
+        "hotelRooms": [
+          {
+            "roomCategory": {
+              "value": "Standard",
+              "type": "4"
+            },
+            "name": "Triple",
+            "relPaxes": [
+              {
+                "idPax": 1,
+                "_id": "6637ac6d5dfdc4834774bbe5"
+              },
+              {
+                "idPax": 2,
+                "_id": "6637ac6d5dfdc4834774bbe6"
+              },
+              {
+                "idPax": 3,
+                "_id": "6637ac6d5dfdc4834774bbe7"
+              }
+            ],
+            "_id": "6637ac6d5dfdc4834774bbe4"
+          },
+          {
+            "roomCategory": {
+              "value": "Standard",
+              "type": "4"
+            },
+            "name": "Triple",
+            "relPaxes": [
+              {
+                "idPax": 4,
+                "_id": "6637ac6d5dfdc4834774bbe9"
+              },
+              {
+                "idPax": 5,
+                "_id": "6637ac6d5dfdc4834774bbea"
+              }
+            ],
+            "_id": "6637ac6d5dfdc4834774bbe8"
+          }
+        ],
+        "_id": "6637ac6d5dfdc4834774bbd6"
+      }
+    ],
+    "createdAt": "2024-05-05T15:57:33.996Z",
+    "updatedAt": "2024-05-05T15:57:33.996Z",
+    "id": "6637ac6d5dfdc4834774bbcd"
+  }
+}

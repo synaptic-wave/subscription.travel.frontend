@@ -1,0 +1,11 @@
+VITE_BASE_URL = https://mainnetstage2.wafflestay.net/api/
+VITE_TRANSLATE_API_KEY = c45bd94471msh6fc9d9651f5c1a7p121853jsn02cb5d7bd1bb
+VITE_GOOGLE_MAPS_API_KEY = AIzaSyCUmi2cn8UEGVbbaGrgpX3X9O4bLjVNJM0
+VITE_API_KEY = 76e67853775a896f8fd4d3d6d77e447a0e2e6e8
+VITE_API_SECRET = a775510ff0e9
+VITE_GOOGLE_CLIENT_ID = 111529897402-l1n4tb95pgpe25b8r32i02rnig8nsber.apps.googleusercontent.com
+
+VITE_EMPTY_HOTEL_IMAGE_URL=https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/2024-05-28%2001.01.16.jpg?alt=media&token=b26c4dae-a906-4b02-9eea-60b9feff5ec3
+VITE_EMPTY_ROOM_IMAGE_URL=https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/2024-05-28%2001.01.16.jpg?alt=media&token=b26c4dae-a906-4b02-9eea-60b9feff5ec3
+VITE_JUNIPER_LANG=kr
+VITE_JUNIPER_CURRENCY=KRW

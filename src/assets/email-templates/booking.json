@@ -1,0 +1,192 @@
+{
+  "code": 2000,
+  "message": "SUCCESS",
+  "data": {
+    "attributes": {
+      "locator": "GQN614",
+      "status": "PAG",
+      "language": "en"
+    },
+    "externalBookingReference": "6620a3402d2e81e56a23fde5",
+    "holder": {
+      "idPax": 2
+    },
+    "paxes": [
+      {
+        "idPax": 1,
+        "name": "salohiddin",
+        "surname": "jaloliddinov",
+        "age": 35,
+        "address": "address",
+        "city": "city",
+        "country": "country",
+        "nationality": "KR",
+        "_id": "6620a37c2d2e81e56a23fdf0"
+      },
+      {
+        "idPax": 2,
+        "name": "salohiddin",
+        "surname": "jaloliddinov",
+        "age": 35,
+        "address": "address",
+        "city": "city",
+        "country": "country",
+        "nationality": "KR",
+        "_id": "6620a37c2d2e81e56a23fdf1"
+      }
+    ],
+    "agenciesData": [
+      {
+        "referencedAgency": false,
+        "agencyCode": "1752",
+        "agencyName": "Test XML Synaptic Wave",
+        "agencyHandledBy": "Test XML Synaptic Wave",
+        "agencyEmail": "skim@swave.kr",
+        "agencyReference": "6620a3402d2e81e56a23fde5",
+        "_id": "6620a37c2d2e81e56a23fdf2"
+      },
+      {
+        "referencedAgency": true,
+        "agencyCode": "0",
+        "_id": "6620a37c2d2e81e56a23fdf3"
+      }
+    ],
+    "items": {
+      "attributes": {
+        "itemId": "501142",
+        "status": "OK",
+        "start": "2024-07-25",
+        "end": "2024-07-26"
+      },
+      "prices": {
+        "totalFixAmounts": {
+          "gross": "33.33",
+          "net": "33.33",
+          "service": {
+            "amount": "33.33"
+          },
+          "type": "S",
+          "currencyType": "USD"
+        },
+        "breakdown": [
+          {
+            "concept": "Base",
+            "price": [
+              {
+                "amount": "0",
+                "_id": "6620a37c2d2e81e56a23fdf5"
+              },
+              {
+                "amount": "33.33",
+                "_id": "6620a37c2d2e81e56a23fdf6"
+              }
+            ],
+            "_id": "6620a37c2d2e81e56a23fdf4"
+          }
+        ]
+      },
+      "cancellationPolicy": {
+        "currencyCode": "USD",
+        "type": "S",
+        "firstDayCostCancellation": {
+          "value": "2024-07-18",
+          "hour": "00:00"
+        },
+        "policyRules": [
+          {
+            "from": "0",
+            "to": "3",
+            "dateFrom": "2024-07-22",
+            "dateFromHour": "00:00",
+            "dateTo": "2024-07-26",
+            "dateToHour": "00:00",
+            "type": "V",
+            "fixedPrice": 0,
+            "percentPrice": 100,
+            "nights": 0,
+            "applicationTypeNights": "Average",
+            "_id": "6620a37c2d2e81e56a23fdf7"
+          },
+          {
+            "from": "4",
+            "to": "7",
+            "dateFrom": "2024-07-18",
+            "dateFromHour": "00:00",
+            "dateTo": "2024-07-22",
+            "dateToHour": "00:00",
+            "type": "V",
+            "fixedPrice": 0,
+            "percentPrice": 25,
+            "nights": 0,
+            "applicationTypeNights": "Average",
+            "_id": "6620a37c2d2e81e56a23fdf8"
+          },
+          {
+            "from": "8",
+            "dateFrom": "2024-04-18",
+            "dateFromHour": "00:00",
+            "dateTo": "2024-07-18",
+            "dateToHour": "00:00",
+            "type": "V",
+            "fixedPrice": 0,
+            "percentPrice": 0,
+            "nights": 0,
+            "applicationTypeNights": "Average",
+            "_id": "6620a37c2d2e81e56a23fdf9"
+          }
+        ]
+      },
+      "comments": [
+        {
+          "value": "Booking line comment",
+          "type": "ELE",
+          "_id": "6620a37c2d2e81e56a23fdfa"
+        },
+        {
+          "value": "* 13/06/2018 - 31/12/2030: Please note that on this field hotels have the possibility of supplying you with important information like:<br><br>- Additional taxes (like, for example, a city tax).<br>- Additional features (like, for example, a detailed explanation of a promotion)<br>- Additional warnings (like, for example, the pool being closed due to renovations)<br>- Additional information (like, for example, the emergency phone)<br><br>Among other examples.<br><br/>Residency<br/>Guests holding Arab Emirates residency will be required to choose Arab Emirates Nationality in order to enjoy the correct rates, otherwise they will be totally responsible for any discrepancies.",
+          "type": "HOT",
+          "_id": "6620a37c2d2e81e56a23fdfb"
+        }
+      ],
+      "hotelInfo": {
+        "code": "JP077424",
+        "name": "Millennium Plaza Hotel Dubai",
+        "hotelCategory": {
+          "value": "5 Stars",
+          "type": "5est"
+        },
+        "address": "Sheikh Zayed Road - -"
+      },
+      "board": {
+        "value": "Room Only",
+        "type": "SA"
+      },
+      "hotelRooms": [
+        {
+          "name": "1/3 pax",
+          "roomCategory": {
+            "value": "",
+            "type": ""
+          },
+          "relPaxes": [
+            {
+              "idPax": 1,
+              "_id": "6620a37c2d2e81e56a23fdfd"
+            }
+          ],
+          "_id": "6620a37c2d2e81e56a23fdfc"
+        }
+      ]
+    },
+    "payment": {
+      "type": "C"
+    },
+    "id": "6620a37c2d2e81e56a23fdef"
+  }
+}
+
+const rooms = [
+  {
+    
+  }
+]

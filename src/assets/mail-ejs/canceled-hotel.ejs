@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+          sans-serif;
+      }
+      table {
+        border-spacing: 0;
+      }
+      .container {
+        width: 850px;
+        margin: 0 auto;
+      }
+      .logo {
+        width: 330px;
+        height: 21px;
+        object-fit: contain;
+        margin-top: 50px;
+      }
+
+      .title {
+        color: #161a3f;
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: -0.78px;
+        margin: 16px 0 0;
+      }
+      .title span {
+        color: #ff3838;
+      }
+      .payment-details {
+        color: #161a3f;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -0.54px;
+      }
+      .payment-info {
+        border-top: 1px solid #161a3f;
+
+        width: 100%;
+        border-spacing: 0;
+      }
+
+      .payment-info tbody tr td {
+        padding: 15px;
+        color: #161a3f;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.42px;
+        border-bottom: 1px solid #eaeaf4;
+      }
+      .payment-info tbody tr td:first-child {
+        color: #5c5f79;
+        background: #fafafd;
+      }
+      ul {
+        margin-top: 20px;
+        padding-left: 15px;
+      }
+      ul li {
+        color: #8d8fa2;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: -0.39px;
+      }
+      .button {
+        padding: 14px 48px;
+        border: 1px solid #2d40ff;
+        background-color: #2d40ff;
+        color: #fff;
+        /* border-radius: 10px; */
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.28px;
+      }
+      .table-button {
+        margin-top: 30px;
+        width: 100%;
+      }
+      .table-button tr td {
+        text-align: center;
+      }
+      .footer {
+        margin-top: 50px;
+        padding-bottom: 30px;
+      }
+      .footer .phone-icon {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+      }
+      .footer .phone {
+        color: #161a3f;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 22px; /* 91.667% */
+        letter-spacing: -0.96px;
+        display: inline-block;
+      }
+      .footer .work-hour {
+        color: #161a3f;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        vertical-align: top;
+        letter-spacing: -0.56px;
+      }
+      .links span {
+        display: inline-block;
+        color: #2d40ff;
+        font-size: 13px;
+        line-height: 26px;
+        letter-spacing: -0.52px;
+        margin-top: 30px;
+      }
+      .info span {
+        color: #5b5d75;
+        font-size: 13px;
+        line-height: 26px;
+        letter-spacing: -0.52px;
+        margin-top: 10px;
+      }
+      .footer-logo {
+        margin-top: 11px;
+      }
+      .footer-logo span {
+        color: #5b5d75;
+        font-size: 13px;
+        line-height: 26px;
+        letter-spacing: -0.52px;
+        vertical-align: top;
+      }
+      .footer-logo img {
+        width: 23px;
+        height: 23px;
+        object-fit: contain;
+      }
+      .booking-code {
+        text-align: center;
+      }
+
+      .booking-code p {
+        color: #161a3f;
+        font-size: 14px;
+        letter-spacing: -0.42px;
+      }
+      .booking-code span {
+        color: #161a3f !important;
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.4px !important;
+        display: block;
+      }
+      .booking-info .name {
+        color: #161a3f;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: -0.45px;
+      }
+      .booking-info .amount span {
+        color: #161a3f;
+        font-size: 14px;
+        letter-spacing: -0.28px;
+        font-weight: 400;
+      }
+      .booking-info .amount {
+        color: #ff176b !important;
+        font-size: 20px !important;
+        letter-spacing: -0.4px !important;
+      }
+
+      .red {
+        color: #ff176b !important;
+      }
+
+      .hotel-info thead tr th {
+        padding: 15px;
+        text-align: left;
+        color: #161a3f;
+        font-size: 14px;
+        font-weight: 500 !important;
+        letter-spacing: -0.42px;
+        background: #fafafd;
+      }
+      .hotel-info tbody tr td {
+        color: #161a3f;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.42px;
+        background-color: #fff !important;
+        padding: 15px;
+      }
+      .booked-amount {
+        color: #161a3f;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -0.54px;
+        margin-bottom: 13px;
+      }
+      .cancellation-policy {
+        color: #06f !important;
+        font-size: 13px !important;
+        font-weight: 400 !important;
+        letter-spacing: -0.39px !important;
+        text-align: right;
+      }
+      .table-mobile {
+        display: none;
+      }
+
+      .table-mobile table thead {
+        background-color: #fafafd;
+      }
+      .hotel-info-table {
+        display: none;
+      }
+      .hotels {
+        margin-top: 26px;
+        margin-bottom: 33px;
+      }
+      .address-table tr td {
+        padding: 12px 16px 4px;
+        font-size: 14px;
+        color: #161a3f;
+      }
+      .address-table {
+        border-bottom: 1px solid #161a3f;
+        padding-bottom: 8px;
+        width: 100%;
+      }
+      .address-table tr td:first-child {
+        font-weight: 500;
+      }
+      .address-table tr td:last-child {
+        font-weight: 400;
+      }
+
+      .red {
+        color: #ff176b !important;
+      }
+
+      @media (max-width: 600px) {
+        .footer {
+          font-size: 20px;
+          line-height: 26px;
+        }
+        .footer .work-hour {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .links span {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .footer-logo span {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .title {
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .booking-info {
+          padding: 16px 20px 0 !important;
+          text-align: left !important;
+        }
+        .cancellation-policy {
+          text-align: left !important;
+          padding: 0 20px !important;
+        }
+        .payment-info {
+          display: none;
+        }
+        .table-mobile {
+          display: block;
+        }
+        .table-mobile table {
+          border-top: 1px solid #161a3f;
+          width: 100%;
+          padding-bottom: 16px;
+          border-bottom: 1px solid #eaeaf4;
+        }
+        .table-mobile table thead th {
+          padding: 15px 0;
+        }
+        .container {
+          max-width: none;
+          /* padding: 0 20px; */
+          width: 100%;
+        }
+        .booking-code p {
+          font-size: 13px;
+          font-weight: 400;
+          letter-spacing: -0.39px;
+        }
+        .booking-code span {
+          font-size: 18px;
+          font-weight: 700;
+          letter-spacing: -0.36px;
+        }
+        .table-mobile table tbody td {
+          padding: 17px 20px;
+          text-align: center;
+        }
+
+        .name {
+          font-size: 14px !important;
+        }
+        .amount {
+          font-size: 18px !important;
+        }
+        .booked-amount {
+          font-size: 14px;
+          line-height: 18px;
+        }
+        .hotel-info-table {
+          display: block;
+          border-top: 1px solid #161a3f;
+          /* margin-top: 20px; */
+        }
+        .hotel-info-table table {
+          width: 100%;
+        }
+        .hotel-info-table table tr td {
+          font-size: 12px;
+          padding: 10px 14px;
+          line-height: 16px;
+          border-bottom: 1px solid #eaeaf4;
+        }
+
+        .address-table tr td {
+          font-size: 12px;
+          padding: 10px 14px;
+          line-height: 16px;
+        }
+
+        .address-table .address-table-td {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 16px;
+          padding: 10px 14px;
+          width: 120px;
+        }
+
+        .label {
+          background: #fafafd;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 16px;
+          padding: 10px 14px;
+          width: 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="logo"
+        src="https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/Group%20(3).png?alt=media&token=ae90a61c-e112-4d74-9556-0581a3e6e1e8"
+      />
+      <h1 class="title">결제하신 <span>예약이 취소</span>되었습니다.</h1>
+      <% hotels.forEach(function(item,index) { %>
+      <div class="hotels">
+        <p class="booked-amount">예약내역 (<%=index+1%>건)</p>
+        <table class="payment-info">
+          <tbody>
+            <tr>
+              <td class="booking-code">
+                <p>예약번호</p>
+                <span><%=item.bookingCode%></span>
+              </td>
+              <td class="booking-info">
+                <p class="name"><%=item.hotelName%></p>
+                <p class="amount">
+                  <b><%=item.hotelPrice%></b> 원 <span>(수수료 포함)</span>
+                </p>
+              </td>
+              <% if (item.cancellationPolicy) { %>
+              <td class="cancellation-policy"><%=item.cancellationPolicy%></td>
+              <% } else { %>
+              <td class="cancellation-policy red">취소 환불 불가</td>
+              <% } %>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-mobile">
+          <table>
+            <thead>
+              <tr>
+                <th class="booking-code">
+                  <p>예약번호</p>
+                  <span><%=item.bookingCode%></span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="booking-info">
+                  <p class="name"><%=item.hotelName%> (외 1건)</p>
+                  <p class="amount">
+                    <b><%=item.hotelPrice%></b> 원 <span>(수수료 포함)</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <% if (item.cancellationPolicy) { %>
+                <td class="cancellation-policy">
+                  <%=item.cancellationPolicy%>
+                </td>
+                <% } else { %>
+                <td class="cancellation-policy red">취소 환불 불가</td>
+                <% } %>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <table class="payment-info hotel-info">
+          <thead>
+            <tr>
+              <th>객실 명</th>
+              <th>성인</th>
+              <th>아동</th>
+              <th>선택사항</th>
+              <th>체크인</th>
+              <th>체크아웃</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% item.hotelRooms.forEach(function(room) { %>
+            <tr>
+              <td><%=room.name%></td>
+              <td><%=item.adults%></td>
+              <td><%=item.child%></td>
+              <td><%=item.roomType%></td>
+              <td><%=item.checkIn%></td>
+              <td><%=item.checkOut%></td>
+            </tr>
+            <% }); %>
+          </tbody>
+        </table>
+        <% item.hotelRooms.forEach(function(room) { %>
+        <div class="hotel-info-table">
+          <table>
+            <tbody>
+              <tr>
+                <td class="label">객실명</td>
+                <td><%=room.name%></td>
+              </tr>
+              <tr>
+                <td class="label">성인</td>
+                <td><%=item.adults%></td>
+              </tr>
+              <tr>
+                <td class="label">아동</td>
+                <td><%=item.child%></td>
+              </tr>
+              <tr>
+                <td class="label">선택사항</td>
+                <td><%=item.roomType%></td>
+              </tr>
+              <tr>
+                <td class="label">체크인</td>
+                <td><%=item.checkIn%></td>
+              </tr>
+              <tr>
+                <td class="label">체크아웃</td>
+                <td><%=item.checkOut%></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <% }); %>
+        <table class="address-table">
+          <tbody>
+            <tr>
+              <td class="address-table-td">호텔 주소</td>
+              <td><%=item.hotelAddress%></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <% }); %>
+      <p class="booked-amount">최소내역</p>
+      <table class="payment-info hotel-info">
+        <thead>
+          <tr>
+            <th>취소방법</th>
+            <th>취소일시</th>
+            <th>결제금액</th>
+            <th>쿠폰할인</th>
+            <th>취소금액</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%=hotels[0].paymentMethod%></td>
+            <td><%=hotels[0].paymentDate%></td>
+            <td><b><%=paidAmount%></b>원</td>
+            <td><b><%=couponPrice%></b>원</td>
+            <td class="red"><b><%=totalPrice%></b>원</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="hotel-info-table">
+        <table>
+          <tbody>
+            <tr>
+              <td class="label">결제방법</td>
+              <td><%=hotels[0].paymentMethod%></td>
+            </tr>
+            <tr>
+              <td class="label">결제일시</td>
+              <td><%=hotels[0].date%></td>
+            </tr>
+            <tr>
+              <td class="label">결제금액</td>
+              <td><b><%=paidAmount%></b>원</td>
+            </tr>
+            <tr>
+              <td class="label">결제금액</td>
+              <td><b><%=couponPrice%></b>원</td>
+            </tr>
+            <tr>
+              <td class="label">실 결제금액</td>
+              <td class="red"><b><%=totalPrice%></b>원</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <ul>
+        <li>자세한 예약 내역은 예약내역에서 확인하세요.</li>
+        <li>본인이 결제한 내역이 아닌 경우, 고객센터로 문의하세요.</li>
+      </ul>
+      <table class="table-button">
+        <tr>
+          <td>
+            <a href="<%=link%>" target="_blank">
+              <button class="button">예약조회 바로가기</button>
+            </a>
+          </td>
+        </tr>
+      </table>
+      <div class="footer">
+        <img
+          class="phone-icon"
+          src="https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/phone-solid%201.jpg?alt=media&token=b54df782-3a06-40c5-b630-d58a0e4aeabf"
+        />
+        <span class="phone">1533-7901</span>
+        <span class="work-hour">ㅣ고객센터 상담시간 (평일) 10:00 ~ 18:00</span>
+        <div class="links">
+          <span>이용약관 ㅣ개인정보 보호정책 ㅣ위치정보 이용약관</span>
+        </div>
+        <div class="info">
+          <span
+            >(주)시냅틱웨이브 ㅣ 대표 : 김세일 ㅣ 사업자등록번호 :
+            422-86-01896ㅣ 통신판매신고번호 : 제 2022-안양동안-0425 호ㅣ
+            문의메일 : wafl@wafflestay.kr 경기도 안양시 동안구 엘에스로 116번길
+            118, 안양2차 SK V1 센터 1030호</span
+          >
+        </div>
+        <div class="footer-logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/LOGO.jpg?alt=media&token=bd22aa6d-db57-4cea-8bc7-6cdded61602f"
+          />
+          <span>Copyright ©2024. Wafflestay Inc. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

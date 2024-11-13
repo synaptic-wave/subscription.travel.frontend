@@ -1,0 +1,46 @@
+{
+  "paxes": {
+    "holderIdPax": 1,
+    "roomPaxes": [
+      {
+        "roomId": 1,
+        "passangers": [
+          {
+            "idPax": 1,
+            "name": "salohiddin",
+            "surname": "jaloliddinov",
+            "age": 35,
+            "nationality": "KR",
+            "email": "saloh224@gmail.com",
+            "phone": "+998977506361",
+            "_id": "66279f58bf314b95d91969b6"
+          },
+          {
+            "idPax": 2,
+            "name": "bekzod",
+            "surname": "rahimov",
+            "age": 35,
+            "_id": "66279f58bf314b95d91969b7"
+          }
+        ],
+        "_id": "66279f58bf314b95d91969b5"
+      }
+    ]
+  },
+  "payment": {
+    "paymentMethod": "CARD",
+    "currencyType": "USD",
+    "amount": 66.66
+  },
+  "status": "PENDING",
+  "language": "en",
+  "ratePlanCode": "FLp7D6B9ANvp76gt8zplHcP5kjZHnd606llhT30VyQyAwz+JoHJ1m74PIp1y4dZJY6YleuERJRfLCMYMU7ggO8TiHfhoaF2fTAhE3wD9tclGKG3IT3ymuIgqVK0EseQWW0fo5bCOZAAHYaxldLglQ84e/TWZOey5d950Bhrc1mXT2i5MppwCSbirTYIAse6zwblxAol/PjaV56oB555puFTGUkiFnAbAT3AbPNMZqcbMkfr9BjzY7BEcshS+O1fHeH5elhgWp3fZrdgcnnpPmbuhXIAy3fbongZEI8Ny0Gs1Fy2rCcO97TDAkYQN7VoFWmgJu4qAcFXlx+n1P9xoxKD/ByzqdGPmVX1e1bpuuJo=",
+  "checkInDate": "2024-07-24",
+  "checkOutDate": "2024-07-25",
+  "hotelName": "Millennium Plaza Hotel Dubai",
+  "hotelCode": "JP077424",
+  "bookingCode": "FLp7D6B9ANvp76gt8zplHcP5kjZHnd606llhT30VyQyAwz+JoHJ1m74PIp1y4dZJY6YleuERJRfLCMYMU7ggO8TiHfhoaF2fTAhE3wD9tclGKG3IT3ymuIgqVK0EseQWW0fo5bCOZAAHYaxldLglQ/uU1+VKY3tGWN8tljliQNV8qNQKthHivwXNyPxwsvGnrSAjjGdU/EHcwhYE8ebaCBEWPMTvAldjSCWIYFV7XxD7IGtCAd5oMxARTWeVJqoYShR7o7qjrdfMbwF63T9vTjmpxfEG8NdsFuzgeBQXa6JIJAZzZ5m0gJHZxSH1JmOevWRAfNObLZGRZB5hsDq2vyi+FXEY5cjFgAV4kWIcyN9F8Xyoh7KuZe8hX6eep4QaVpNaWn3vp78g+c5Ct0AC+c0NgJA+4BLinyW1M1CEam0=",
+  "createdAt": "2024-04-23T11:45:28.957Z",
+  "updatedAt": "2024-04-23T11:45:28.957Z",
+  "id": "66279f58bf314b95d91969b4"
+}

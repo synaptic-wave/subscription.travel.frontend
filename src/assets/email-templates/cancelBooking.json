@@ -1,0 +1,243 @@
+{
+  "code": 2000,
+  "message": "SUCCESS",
+  "data": {
+    "soap:Envelope": {
+      "attributes": {
+        "xmlns:soap": "http://schemas.xmlsoap.org/soap/envelope/",
+        "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "xmlns:xsd": "http://www.w3.org/2001/XMLSchema"
+      },
+      "soap:Body": {
+        "CancelBookingResponse": {
+          "attributes": {
+            "xmlns": "http://www.juniper.es/webservice/2007/"
+          },
+          "BookingRS": {
+            "attributes": {
+              "Url": "http://xml-uat.bookingengine.es",
+              "TimeStamp": "2024-04-22T08:03:57.145297+02:00",
+              "IntCode": "H4SK8P36DfOqgaLaWCoMOvFiFMJiwNP/bYfwVEJi9Q4="
+            },
+            "Warnings": {
+              "Warning": {
+                "attributes": {
+                  "Code": "warnCancelledAndCancellationCostRetrieved",
+                  "Text": "Cancellation cost retrieved. Reservation was cancelled."
+                }
+              },
+              "CancelInfo": {
+                "BookingCodeState": "CaC",
+                "BookingCancelCost": "0",
+                "BookingCancelCostCurrency": "USD"
+              }
+            },
+            "Reservations": {
+              "Reservation": {
+                "attributes": {
+                  "Locator": "V1R4DW",
+                  "Status": "CAC",
+                  "Language": "en"
+                },
+                "ExternalBookingReference": "6625fb6c5972f6729676a774",
+                "Holder": {
+                  "RelPax": {
+                    "attributes": {
+                      "IdPax": "2"
+                    }
+                  }
+                },
+                "Paxes": {
+                  "Pax": [
+                    {
+                      "attributes": {
+                        "IdPax": "1"
+                      },
+                      "Name": "salohiddin",
+                      "Surname": "jaloliddinov",
+                      "Age": "35",
+                      "Email": "saloh224@gmail.com",
+                      "Nationality": "KR"
+                    },
+                    {
+                      "attributes": {
+                        "IdPax": "2"
+                      },
+                      "Name": "salohiddin",
+                      "Surname": "jaloliddinov",
+                      "Age": "35",
+                      "Email": "saloh224@gmail.com",
+                      "Nationality": "KR"
+                    }
+                  ]
+                },
+                "AgenciesData": {
+                  "AgencyData": [
+                    {
+                      "ReferencedAgency": "false",
+                      "AgencyCode": "1752",
+                      "AgencyName": "Test XML Synaptic Wave",
+                      "AgencyHandledBy": "Test XML Synaptic Wave",
+                      "AgencyEmail": "skim@swave.kr",
+                      "AgencyReference": "6625fb6c5972f6729676a774"
+                    },
+                    {
+                      "ReferencedAgency": "true",
+                      "AgencyCode": "0"
+                    }
+                  ]
+                },
+                "Items": {
+                  "HotelItem": {
+                    "attributes": {
+                      "ItemId": "501780",
+                      "Status": "CA",
+                      "Start": "2024-08-08",
+                      "End": "2024-08-09"
+                    },
+                    "Prices": {
+                      "Price": {
+                        "attributes": {
+                          "Type": "S",
+                          "Currency": "USD"
+                        },
+                        "TotalFixAmounts": {
+                          "attributes": {
+                            "Gross": "33.33",
+                            "Nett": "33.33"
+                          },
+                          "Service": {
+                            "attributes": {
+                              "Amount": "33.33"
+                            }
+                          }
+                        },
+                        "Cancellation": {
+                          "attributes": {
+                            "Amount": "0"
+                          }
+                        }
+                      }
+                    },
+                    "CancellationPolicy": {
+                      "attributes": {
+                        "CurrencyCode": "USD",
+                        "Type": "S"
+                      },
+                      "FirstDayCostCancellation": {
+                        "value": "2024-08-01",
+                        "attributes": {
+                          "Hour": "00:00"
+                        }
+                      },
+                      "Description": " * Cancelling from 08/05/2024 at 00:00:00 up to 08/09/2024 at 00:00:00: 100.00 % of expenses * Cancelling from 08/01/2024 at 00:00:00 up to 08/05/2024 at 00:00:00: 25.00 % of expenses * Cancelling from 04/22/2024 at 00:00:00 up to 08/01/2024 at 00:00:00: 0 &nbsp;USD",
+                      "PolicyRules": {
+                        "Rule": [
+                          {
+                            "attributes": {
+                              "From": "0",
+                              "To": "3",
+                              "DateFrom": "2024-08-05",
+                              "DateFromHour": "00:00",
+                              "DateTo": "2024-08-09",
+                              "DateToHour": "00:00",
+                              "Type": "V",
+                              "FixedPrice": "0",
+                              "PercentPrice": "100",
+                              "Nights": "0",
+                              "ApplicationTypeNights": "Average"
+                            }
+                          },
+                          {
+                            "attributes": {
+                              "From": "4",
+                              "To": "7",
+                              "DateFrom": "2024-08-01",
+                              "DateFromHour": "00:00",
+                              "DateTo": "2024-08-05",
+                              "DateToHour": "00:00",
+                              "Type": "V",
+                              "FixedPrice": "0",
+                              "PercentPrice": "25",
+                              "Nights": "0",
+                              "ApplicationTypeNights": "Average"
+                            }
+                          },
+                          {
+                            "attributes": {
+                              "From": "8",
+                              "DateFrom": "2024-04-22",
+                              "DateFromHour": "00:00",
+                              "DateTo": "2024-08-01",
+                              "DateToHour": "00:00",
+                              "Type": "V",
+                              "FixedPrice": "0",
+                              "PercentPrice": "0",
+                              "Nights": "0",
+                              "ApplicationTypeNights": "Average"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "Comments": {
+                      "Comment": {
+                        "value": "* 13/06/2018 - 31/12/2030: Please note that on this field hotels have the possibility of supplying you with important information like:<br><br>- Additional taxes (like, for example, a city tax).<br>- Additional features (like, for example, a detailed explanation of a promotion)<br>- Additional warnings (like, for example, the pool being closed due to renovations)<br>- Additional information (like, for example, the emergency phone)<br><br>Among other examples.<br><br/>Residency<br/>Guests holding Arab Emirates residency will be required to choose Arab Emirates Nationality in order to enjoy the correct rates, otherwise they will be totally responsible for any discrepancies.",
+                        "attributes": {
+                          "Type": "HOT"
+                        }
+                      }
+                    },
+                    "HotelInfo": {
+                      "attributes": {
+                        "Code": "JP077424",
+                        "JPCode": "JP077424",
+                        "JPDCode": "CUD030187",
+                        "DestinationZone": "30187"
+                      },
+                      "Name": "Millennium Plaza Hotel Dubai",
+                      "HotelCategory": {
+                        "value": "5 Stars",
+                        "attributes": {
+                          "Type": "5est"
+                        }
+                      },
+                      "Address": "Sheikh Zayed Road - -"
+                    },
+                    "Board": {
+                      "value": "Room Only",
+                      "attributes": {
+                        "Type": "SA"
+                      }
+                    },
+                    "HotelRooms": {
+                      "HotelRoom": {
+                        "attributes": {
+                          "Source": "1",
+                          "JRCode": "JR000008"
+                        },
+                        "Name": "1/3 pax",
+                        "RelPaxes": {
+                          "RelPax": {
+                            "attributes": {
+                              "IdPax": "1"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "Payment": {
+                  "attributes": {
+                    "Type": "C"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+          sans-serif;
+      }
+      .container {
+        width: 800px;
+        margin: 0 auto;
+      }
+      .logo {
+        width: 120px;
+        height: 28px;
+        object-fit: contain;
+        margin-top: 50px;
+      }
+      .title {
+        color: #161a3f;
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: -0.78px;
+        margin: 16px 0 50px;
+      }
+      .payment-details {
+        color: #161a3f;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -0.54px;
+      }
+      .payment-info {
+        border-top: 1px solid #161a3f;
+        margin-top: 20px;
+        width: 100%;
+        border-spacing: 0;
+      }
+
+      .payment-info tbody tr td {
+        padding: 15px;
+        color: #161a3f;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.42px;
+        border-bottom: 1px solid #eaeaf4;
+      }
+      .payment-info tbody tr td:first-child {
+        color: #5c5f79;
+        background: #fafafd;
+      }
+      ul {
+        margin-top: 20px;
+        padding-left: 15px;
+      }
+      ul li {
+        color: #8d8fa2;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: -0.39px;
+      }
+      .button {
+        padding: 14px 48px;
+        border: 1px solid #2d40ff;
+        background-color: #2d40ff;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.28px;
+      }
+      .table-button {
+        margin-top: 30px;
+        width: 100%;
+      }
+      .table-button tr td {
+        text-align: center;
+      }
+      .footer {
+        margin-top: 50px;
+      }
+      .footer .phone-icon {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+      }
+      .footer .phone {
+        color: #161a3f;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 22px; /* 91.667% */
+        letter-spacing: -0.96px;
+        display: inline-block;
+      }
+      .footer .work-hour {
+        color: #161a3f;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        vertical-align: top;
+        letter-spacing: -0.56px;
+      }
+      .links span {
+        display: inline-block;
+        color: #2d40ff;
+        font-size: 13px;
+        line-height: 26px;
+        letter-spacing: -0.52px;
+        margin-top: 30px;
+      }
+      .info span {
+        color: #5b5d75;
+        font-size: 13px;
+        line-height: 26px;
+        letter-spacing: -0.52px;
+        margin-top: 10px;
+      }
+      .footer-logo {
+        margin-top: 11px;
+      }
+      .footer-logo span {
+        color: #5b5d75;
+        font-size: 13px;
+        line-height: 26px;
+        letter-spacing: -0.52px;
+        vertical-align: top;
+      }
+      .footer-logo img {
+        width: 23px;
+        height: 23px;
+        object-fit: contain;
+      }
+      .booking-code {
+        text-align: center;
+      }
+
+      .booking-code p:first-child {
+        color: #161a3f;
+        font-size: 14px;
+        letter-spacing: -0.42px;
+      }
+      .booking-code p:last-child {
+        color: #161a3f !important;
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.4px !important;
+      }
+      .booking-info p:first-child {
+        color: #161a3f;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: -0.45px;
+      }
+      .booking-info span {
+        color: #161a3f;
+        font-size: 14px;
+        letter-spacing: -0.28px;
+        font-weight: 400;
+      }
+      .booking-info p:last-child {
+        color: #ff176b !important;
+        font-size: 20px !important;
+        letter-spacing: -0.4px !important;
+      }
+
+      .red {
+        color: #ff176b !important;
+      }
+
+      .hotel-info thead tr th {
+        padding: 15px 30px;
+        text-align: left;
+        color: #161a3f;
+        font-size: 14px;
+        font-weight: 500 !important;
+        letter-spacing: -0.42px;
+        background: #fafafd;
+      }
+      .hotel-info tbody tr td {
+        color: #161a3f;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.42px;
+        background-color: #fff !important;
+        padding: 15px 30px;
+      }
+      .booked-amount {
+        color: #161a3f;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -0.54px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="logo"
+        src="https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/Frame.jpg?alt=media&token=ed6e3e96-6c5d-4112-b09f-b5ad3fcd470b"
+      />
+      <h1 class="title">와플스테이에서 결제하신 예약이 취소되었습니다.</h1>
+      <table class="payment-info">
+        <tbody>
+          <tr>
+            <td class="booking-code">
+              <p>예약번호</p>
+              <p><%=bookingCode%></p>
+            </td>
+            <td class="booking-info">
+              <p><%=hotelName%> (외 1건)</p>
+              <p><b><%=totalAmount%></b> 원 <span>(수수료 포함)</span></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="booked-amount">예약내역(1건)</p>
+      <table class="payment-info hotel-info">
+        <thead>
+          <tr>
+            <th>호텔 명</th>
+            <th>호텔 주소</th>
+            <th>객실 명</th>
+            <th>체크인</th>
+            <th>체크아웃</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tbody>
+            <% hotelRooms.forEach(function(item) { %>
+            <tr>
+              <td><%=hotelName%></td>
+              <td><%=hotelAddress%></td>
+              <td><%=item.name%> <%=item.roomCategory.value%></td>
+              <td><%=checkIn%></td>
+              <td><%=checkOut%></td>
+            </tr>
+            <% }); %>
+          </tbody>
+        </tbody>
+      </table>
+      <p class="booked-amount">결제내역</p>
+      <table class="payment-info hotel-info">
+        <thead>
+          <tr>
+            <th>결제방법</th>
+            <th>취소일시</th>
+            <th>결제금액</th>
+            <th>쿠폰할인</th>
+            <th>총 환불금액</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%=paymentType%></td>
+            <td><%=paymentDate%></td>
+            <td><b>-<%=hotelPrice%></b>원</td>
+            <td><b>-<%=couponPrice%></b>원</td>
+            <td class="red"><b><%=totalAmount%></b>원</td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>자세한 예약 내역은 와플스테이 예약내역에서 확인하세요</li>
+        <li>
+          본인이 결제한 내역이 아닌 경우, 와플스테이 고객센터로 문의하세요
+        </li>
+      </ul>
+      <table class="table-button">
+        <tr>
+          <td>
+            <button class="button">예약조회 바로가기</button>
+          </td>
+        </tr>
+      </table>
+      <div class="footer">
+        <img
+          class="phone-icon"
+          src="https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/phone-solid%201.jpg?alt=media&token=b54df782-3a06-40c5-b630-d58a0e4aeabf"
+        />
+        <span class="phone">1533-7901</span>
+        <span class="work-hour">ㅣ 고객센터 상담시간 (평일) 10:00 ~ 18:00</span>
+        <div class="links">
+          <span>이용약관 ㅣ개인정보 보호정책 ㅣ위치정보 이용약관</span>
+        </div>
+        <div class="info">
+          <span
+            >(주)시냅틱웨이브 ㅣ 대표 : 김세일 ㅣ 사업자등록번호 :
+            422-86-01896ㅣ 통신판매신고번호 : 제 2022-안양동안-0425 호ㅣ
+            문의메일 : wafl@wafflestay.kr 경기도 안양시 동안구 엘에스로 116번길
+            118, 안양2차 SK V1 센터 1030호</span
+          >
+        </div>
+        <div class="footer-logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/LOGO.jpg?alt=media&token=bd22aa6d-db57-4cea-8bc7-6cdded61602f"
+          />
+          <span>Copyright ©2024. Wafflestay Inc. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

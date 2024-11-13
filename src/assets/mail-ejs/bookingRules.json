@@ -1,0 +1,703 @@
+{
+  "code": 2000,
+  "message": "SUCCESS",
+  "data": {
+    "HotelResult": {
+      "HotelOptions": {
+        "HotelOption": {
+          "attributes": {
+            "Status": "OK"
+          },
+          "BookingCode": {
+            "value": "Af/NTgnvISu/dORWM0CequCBA9vTHCtmmqkgCxmlQ5GKvL12wCJXBPQKUN+6jy6Z1BntrkW7N+uDlpfHP1Ex7ElV9kDhZSY+JGSc6BkErYGycaypfXmEETv8pi0Lq5w15UF3WbYBQgZ45QMBHmoDVNGDViVQhIsJ8ckxtW11BFuIxgrIn7O5sI2ANkVbyw9IH9eDEUndLw5UvmY72ziWZiYVhMJmQps5ZnI8W6v6743EUvfDVki8oySbJzGfmzLIEwV6fG32S1qi4bqOONsJ094VSJyMhToGunzHr4c7Tz5LAULVNUv/DutTM44BOzAOqqaSbOSRBDjI9Hk/0uLFOVD3KLhYVeFwp8HuD73rQqcdvRHLQuZEIL/MXswP2PzhllnPahP094a+382LnhavJ6xWjPD9ofNwiLBrf38jH8qMz9Jh4F9OF3g6EighIHFBRqeFwGVN939McqXDvwFQoiArVmmS58R7y6aFrioEKJ4teKLRHEEBajZ4BRCQdeMiISjg8QqbNo1/eXSpgGoapz4xcDY8r3Pf1i274v8YF4osp1R8ItLSbW1UVae81GGC82JyqFj82m5mR1VkA6GjMiAb9BSARl4TWv12EkWevSuPgThMMRjCdhKCx2bXSScxE/ohnvejWSchKWkhRRqUEHA2shldo4mQkMDpam6ouDDaNq5Pq6GaDx1CVBM9uRzw69qn2lTy1B0qkxBTGfIXRkPAjI0i0UhxkNTtCNf0zomk5m+dOJCfxi55lE0iIMYK",
+            "attributes": {
+              "ExpirationDate": "2024-06-14T00:43:35.9176486+02:00"
+            }
+          },
+          "HotelRequiredFields": {
+            "HotelBooking": {
+              "Paxes": {
+                "Pax": [
+                  {
+                    "attributes": {
+                      "IdPax": "1"
+                    },
+                    "Name": "Holder Name",
+                    "Surname": "Holder Surname",
+                    "Age": "35"
+                  },
+                  {
+                    "attributes": {
+                      "IdPax": "2"
+                    },
+                    "Name": "Pax Name",
+                    "Surname": "Pax Surname",
+                    "Age": "35"
+                  }
+                ]
+              },
+              "Holder": {
+                "RelPax": {
+                  "attributes": {
+                    "IdPax": "1"
+                  }
+                }
+              },
+              "Elements": {
+                "HotelElement": {
+                  "BookingCode": "Af/NTgnvISu/dORWM0CequCBA9vTHCtmmqkgCxmlQ5GKvL12wCJXBPQKUN+6jy6Z1BntrkW7N+uDlpfHP1Ex7ElV9kDhZSY+JGSc6BkErYGycaypfXmEETv8pi0Lq5w15UF3WbYBQgZ45QMBHmoDVNGDViVQhIsJ8ckxtW11BFuIxgrIn7O5sI2ANkVbyw9IH9eDEUndLw5UvmY72ziWZiYVhMJmQps5ZnI8W6v6743EUvfDVki8oySbJzGfmzLIEwV6fG32S1qi4bqOONsJ094VSJyMhToGunzHr4c7Tz5LAULVNUv/DutTM44BOzAOqqaSbOSRBDjI9Hk/0uLFOVD3KLhYVeFwp8HuD73rQqcdvRHLQuZEIL/MXswP2PzhllnPahP094a+382LnhavJ6xWjPD9ofNwiLBrf38jH8qMz9Jh4F9OF3g6EighIHFBRqeFwGVN939McqXDvwFQoiArVmmS58R7y6aFrioEKJ4teKLRHEEBajZ4BRCQdeMiISjg8QqbNo1/eXSpgGoapz4xcDY8r3Pf1i274v8YF4osp1R8ItLSbW1UVae81GGC82JyqFj82m5mR1VkA6GjMiAb9BSARl4TWv12EkWevSuPgThMMRjCdhKCx2bXSScxE/ohnvejWSchKWkhRRqUEHA2shldo4mQkMDpam6ouDDaNq5Pq6GaDx1CVBM9uRzw69qn2lTy1B0qkxBTGfIXRkPAjI0i0UhxkNTtCNf0zomk5m+dOJCfxi55lE0iIMYK",
+                  "RelPaxesDist": {
+                    "RelPaxDist": {
+                      "RelPaxes": {
+                        "RelPax": [
+                          {
+                            "attributes": {
+                              "IdPax": "1"
+                            }
+                          },
+                          {
+                            "attributes": {
+                              "IdPax": "2"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "HotelBookingInfo": {
+                    "attributes": {
+                      "Start": "2024-07-14",
+                      "End": "2024-07-15"
+                    },
+                    "Price": {
+                      "PriceRange": {
+                        "attributes": {
+                          "Minimum": "46608.9",
+                          "Maximum": "51515.1",
+                          "Currency": "KRW"
+                        }
+                      }
+                    },
+                    "HotelCode": "JP010084"
+                  }
+                }
+              }
+            }
+          },
+          "CancellationPolicy": {
+            "attributes": {
+              "CurrencyCode": "KRW",
+              "Type": "S"
+            },
+            "FirstDayCostCancellation": {
+              "value": "2024-07-13",
+              "attributes": {
+                "Hour": "22:59"
+              }
+            },
+            "Description": " * Cancelling from 2024/06/13 at 00:00:00 up to 2024/07/13 at 22:58:59: 0 KRW * Cancelling from 2024/07/13 at 22:59:00 up to 2024/07/14 at 00:00:00: ₩&nbsp 49062   *Date and time is calculated based on local time of destination (GMT +04:00)",
+            "PolicyRules": {
+              "Rule": [
+                {
+                  "attributes": {
+                    "DateFrom": "2024-06-13",
+                    "DateFromHour": "00:00",
+                    "DateTo": "2024-07-13",
+                    "DateToHour": "22:58",
+                    "Type": "V",
+                    "FixedPrice": "0",
+                    "PercentPrice": "0",
+                    "Nights": "0",
+                    "ApplicationTypeNights": "Average"
+                  }
+                },
+                {
+                  "attributes": {
+                    "DateFrom": "2024-07-13",
+                    "DateFromHour": "22:59",
+                    "DateTo": "2024-07-14",
+                    "DateToHour": "00:00",
+                    "Type": "V",
+                    "FixedPrice": "49061.56",
+                    "PercentPrice": "0",
+                    "Nights": "0",
+                    "ApplicationTypeNights": "Average"
+                  }
+                }
+              ]
+            }
+          },
+          "PriceInformation": {
+            "Board": {
+              "value": "ROOM ONLY",
+              "attributes": {
+                "Type": "SA"
+              }
+            },
+            "HotelRooms": {
+              "HotelRoom": {
+                "attributes": {
+                  "Units": "1",
+                  "Source": "1"
+                },
+                "Name": "DOUBLE DELUXE KING BED",
+                "RoomCategory": {
+                  "attributes": {
+                    "Type": "DBL.DX-KG"
+                  }
+                }
+              }
+            },
+            "Prices": {
+              "Price": {
+                "attributes": {
+                  "Type": "S",
+                  "Currency": "KRW"
+                },
+                "TotalFixAmounts": {
+                  "attributes": {
+                    "Gross": "49062",
+                    "Nett": "49062"
+                  },
+                  "Service": {
+                    "attributes": {
+                      "Amount": "49062"
+                    }
+                  }
+                },
+                "Breakdown": {
+                  "Concepts": {
+                    "Concept": {
+                      "attributes": {
+                        "Type": "BAS",
+                        "Name": "Base"
+                      },
+                      "Items": {
+                        "Item": {
+                          "attributes": {
+                            "Amount": "49062",
+                            "Quantity": "1",
+                            "TtaCode": "0",
+                            "Source": "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "AdditionalElements": {
+              "HotelSupplements": {
+                "HotelSupplement": {
+                  "attributes": {
+                    "Code": "1",
+                    "DirectPayment": "true",
+                    "Quantity": "1",
+                    "Amount": "15",
+                    "Currency": "AED"
+                  },
+                  "Name": "Taxes",
+                  "Description": "Payment at destination"
+                }
+              }
+            },
+            "HotelContent": {
+              "attributes": {
+                "Code": "JP010084"
+              },
+              "HotelName": "Landmark Summit Hotel",
+              "Zone": {
+                "attributes": {
+                  "JPDCode": "JPD052878",
+                  "Code": "189269"
+                },
+                "Name": "Deira"
+              },
+              "HotelCategory": {
+                "value": "4 Stars",
+                "attributes": {
+                  "Type": "4est"
+                }
+              },
+              "Address": {
+                "Address": "Al Rigga Street, Behind Commercial Bank Building, Dubai, United Arab Emirates",
+                "Latitude": "25.264481",
+                "Longitude": "55.319655"
+              },
+              "ContactInfo": {
+                "PhoneNumbers": {
+                  "PhoneNumber": {
+                    "value": "+97142740999",
+                    "attributes": {
+                      "Type": "GEN"
+                    }
+                  }
+                },
+                "Faxes": {
+                  "Fax": {
+                    "value": "+9718000178152",
+                    "attributes": {
+                      "Type": "GEN"
+                    }
+                  }
+                }
+              },
+              "Images": {
+                "Image": [
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_a_001.jpg"
+                  },
+                  {
+                    "Description": "외관"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_a_002.jpg"
+                  },
+                  {
+                    "Description": "외관"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_a_003.jpg"
+                  },
+                  {
+                    "Description": "외관"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_l_004.jpg"
+                  },
+                  {
+                    "Description": "로비"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_l_005.jpg"
+                  },
+                  {
+                    "Description": "로비"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_l_006.jpg"
+                  },
+                  {
+                    "Description": "로비"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_l_007.jpg"
+                  },
+                  {
+                    "Description": "로비"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_l_008.jpg"
+                  },
+                  {
+                    "Description": "로비"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_ro_001.jpg"
+                  },
+                  {
+                    "Description": "객실"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_ro_003.jpg"
+                  },
+                  {
+                    "Description": "객실"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_ro_005.jpg"
+                  },
+                  {
+                    "Description": "객실"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_ro_006.jpg"
+                  },
+                  {
+                    "Description": "객실"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_ro_007.jpg"
+                  },
+                  {
+                    "Description": "객실"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_w_001.jpg"
+                  },
+                  {
+                    "Description": "객실"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_ro_018.jpg"
+                  },
+                  {
+                    "Description": "객실"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_ro_010.jpg"
+                  },
+                  {
+                    "Description": "객실"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_ro_012.jpg"
+                  },
+                  {
+                    "Description": "객실"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_ro_013.jpg"
+                  },
+                  {
+                    "Description": "객실"
+                  },
+                  {
+                    "attributes": {
+                      "Type": "BIG"
+                    },
+                    "FileName": "https://photos.hotelbeds.com/giata/06/064241/064241a_hb_ro_014.jpg"
+                  },
+                  {
+                    "Description": "객실"
+                  }
+                ]
+              },
+              "Descriptions": {
+                "Description": [
+                  {
+                    "value": "두바이의 최고 위치에 있는 서밋 호텔에서 도시의 모든 것을 맛볼 수 있습니다. 다양한 시설과 서비스를 제공하는 호텔에서 편하게 주무실 수 있습니다. 24시간 룸서비스, Wi-Fi (무료/전 객실), 24시간 경비 서비스, 일일 청소 서비스, 택시 서비스 등을 포함한 모든 필요한 시설이 가까이 있습니다. 아늑한 객실에서 편안한 잠자리를 보장해 드리며, 일부 객실은 평면 TV, 카펫바닥, 무료 인스턴트 커피, 무료 차, 리넨 등의 편의시설을 제공합니다. 호텔은 다양한 레크리에이션 기회를 제공합니다. 두바이에 방문하는 이유와 상관없이 서밋 호텔에서 집같은 평안함을 느낄 수 있습니다.",
+                    "attributes": {
+                      "Type": "SHT"
+                    }
+                  },
+                  {
+                    "value": "두바이의 최고 위치에 있는 서밋 호텔에서 도시의 모든 것을 맛볼 수 있습니다. 다양한 시설과 서비스를 제공하는 호텔에서 편하게 주무실 수 있습니다. 24시간 룸서비스, Wi-Fi (무료/전 객실), 24시간 경비 서비스, 일일 청소 서비스, 택시 서비스 등을 포함한 모든 필요한 시설이 가까이 있습니다. 아늑한 객실에서 편안한 잠자리를 보장해 드리며, 일부 객실은 평면 TV, 카펫바닥, 무료 인스턴트 커피, 무료 차, 리넨 등의 편의시설을 제공합니다. 호텔은 다양한 레크리에이션 기회를 제공합니다. 두바이에 방문하는 이유와 상관없이 서밋 호텔에서 집같은 평안함을 느낄 수 있습니다.",
+                    "attributes": {
+                      "Type": "LNG"
+                    }
+                  }
+                ]
+              },
+              "Features": {
+                "Feature": [
+                  {
+                    "value": "휠체어 사용 가능",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "주차장",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "24시간 안내 데스크",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "체크인 시간",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "체크아웃 시간",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "휴대폰 사용 범위",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "Wi-Fi",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "룸서비스",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "세탁 서비스",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "의료 서비스",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "안전 금고",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "탈의실",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "엘리베이터",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "슈퍼마켓",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "매장",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "피트니스룸",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "신문 ",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "짐 보관소",
+                    "attributes": {
+                      "Type": "HOT"
+                    }
+                  },
+                  {
+                    "value": "거주 평수 (평방 미터)",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "침실 수",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "거실",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "욕실",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "샤워실",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "헤어드라이어",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "화장품",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "타올 선택 메뉴",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "무선 인터넷 접속",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "인터넷 사용",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "직통 전화",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "텔레비전",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "위성 TV",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "케이블 TV",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "미니 바",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "냉장고",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "차/커피 메이커",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "개별 냉방 시스템",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "휠체어 사용 가능",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "책상",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "흡연실",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "주문형 엑스트라 베드",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  },
+                  {
+                    "value": "주문형 아기 침대",
+                    "attributes": {
+                      "Type": "ROO"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "OptionalElements": {
+            "Comments": {
+              "Comment": {
+                "value": "<b>Supplements</b><br/>Payment at destination: 15,00 AED<br/><br/><b>Room name</b><br/>DOUBLE DELUXE KING BED\r\n<br/><br/><b>Details</b><br/>  Estimated total amount of taxes & fees for this booking:15.00 Utd.<br> Arab Emir.<br> Dirham payable on arrival.<br> Please note that the city tax for accommodations with more than 1 bedroom shall be charged per bedroom per night.<br> Car park NO.<br>Check-in hour 14:00-.<br>Minimum check-in age 18.<br> Fees to be paid at hotel: 4.08 USD.<br> Included: Free self parking.<br> Included: Free WiFi.<br>Modification of this booking is not permitted\r\n",
+                "attributes": {
+                  "Type": "HOT"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

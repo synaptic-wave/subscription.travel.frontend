@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box !important;
+        margin: 0;
+        padding: 0;
+        font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+          sans-serif;
+      }
+
+      @media only all and (max-width: 576px) {
+        .container {
+          padding: 0 15px;
+          max-width: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="background: #f7f7f7">
+    <div
+      style="
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 15px;
+        background-color: #fff;
+      "
+    >
+      <header style="padding-top: 35px">
+        <table style="width: 100%">
+          <tbody>
+            <tr>
+              <td style="text-align: center">
+                <div style="width: 330px; height: 40px; margin: 0 auto">
+                  <a href="https://wafflestay.kr/index">
+                    <img
+                      style="width: 100%; height: 100%; object-fit: contain"
+                      src="https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/Frame.jpg?alt=media&token=ed6e3e96-6c5d-4112-b09f-b5ad3fcd470b"
+                    />
+                  </a>
+                </div>
+                <p
+                  style="
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 34px;
+                    color: #161a3f !important;
+                    margin-top: 40px;
+                  "
+                >
+                  이메일 인증번호 발송
+                </p>
+                <p
+                  style="
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    color: #161a3f !important;
+                    margin-top: 6px;
+                    padding-bottom: 30px;
+                    border-bottom: 1px solid #e7e7ee;
+                  "
+                >
+                  ‘(주)시냅틱웨이브’ 에서 본인 확인을 위해 발송되는 메일입니다.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </header>
+      <main style="margin-top: 30px">
+        <table style="width: 100%">
+          <tbody>
+            <tr>
+              <td style="text-align: center">
+                <p
+                  style="
+                    color: #000;
+                    font-size: 18px;
+                    line-height: 26px;
+                    font-weight: 500;
+                  "
+                >
+                  아래 인증번호를 입력하세요
+                </p>
+                <div
+                  style="
+                    background-color: #f7f7fc;
+                    padding: 16px 88px;
+                    width: fit-content;
+                    margin: 16px auto 0;
+                  "
+                >
+                  <p
+                    style="
+                      color: #000;
+                      font-size: 20px;
+                      line-height: 28px;
+                      font-weight: 500;
+                    "
+                  >
+                    <%=otp%>
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+      <table
+        style="
+          padding-top: 40px;
+          width: 100%;
+          margin-top: 40px;
+          border-top: 1px solid #e7e7ee;
+        "
+      >
+        <tbody>
+          <tr>
+            <td style="text-align: center">
+              <a href="<%=verificationURL%>" style="margin: 0 auto">
+                <button
+                  style="
+                    border: 1px solid #2d40ff;
+                    background: #2d40ff;
+                    outline: none;
+                    padding: 12px 78px;
+                    font-size: 14px;
+                    color: #fff !important;
+                    border-radius: 5px;
+                    margin: 0 auto;
+                    cursor: pointer;
+                  "
+                >
+                  인증번호 입력 바로가기
+                </button>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <footer style="margin-top: 39px; padding-bottom: 30px">
+        <table style="width: 100%">
+          <tbody>
+            <tr>
+              <td>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/phone-solid%201.jpg?alt=media&token=b54df782-3a06-40c5-b630-d58a0e4aeabf"
+                    style="width: 20px; height: 20px; object-fit: contain"
+                  />
+                  <p
+                    style="
+                      display: inline-block;
+                      font-size: 24px;
+                      color: #161a3f;
+                      font-weight: 700;
+                      padding-right: 10px;
+                      border-right: 1px solid #e5e6ee;
+                    "
+                  >
+                    1533-7901
+                  </p>
+                  <p
+                    style="
+                      display: inline-block;
+                      font-size: 14px;
+                      color: #161a3f;
+                      font-weight: 500;
+                      vertical-align: middle;
+                    "
+                  >
+                    고객센터
+                  </p>
+                </div>
+                <div
+                  style="
+                    font-size: 13px;
+                    color: #5b5d75 !important;
+                    line-height: 26px;
+                    letter-spacing: -0.52px;
+                    margin-top: 21px;
+                  "
+                >
+                  (주)시냅틱웨이브
+                  <span
+                    style="color: #e5e6ee; font-size: 13px; line-height: 26px"
+                    >ㅣ</span
+                  >
+                  문의메일 : wafl@wafflestay.kr<br />
+                  경기도 안양시 동안구 엘에스로 116번길 118, 안양2차 SK V1 센터
+                  1030호
+                </div>
+                <div style="margin-top: 8px">
+                  <img
+                    style="width: 60px; height: 23px; object-fit: contain"
+                    src="https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/Frame.jpg?alt=media&token=ed6e3e96-6c5d-4112-b09f-b5ad3fcd470b"
+                  />
+                  <p
+                    style="
+                      display: inline-block;
+                      font-size: 13px;
+                      color: #5b5d75 !important;
+                      line-height: 26px;
+                      letter-spacing: -0.52px;
+                      vertical-align: middle;
+                      margin-bottom: 14px;
+                    "
+                  >
+                    Copyright ©2023. Wafflestay Inc. All rights reserved.
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </footer>
+    </div>
+  </body>
+  <script>
+    const copyCode = async () => {
+      try {
+        await navigator.clipboard.writeText('<%= otp %>')
+        document.getElementById('copy-button').innerText = '인증번호 복사됨'
+        document.getElementById('copy-button').style.backgroundColor = '#2d40ff'
+        setTimeout(() => {
+          document.getElementById('copy-button').innerText = '인증번호 복사'
+          document.getElementById('copy-button').style.backgroundColor =
+            '#8d8fa2'
+        }, 5000)
+      } catch (err) {
+        console.error('Failed to copy: ', err)
+      }
+    }
+  </script>
+</html>

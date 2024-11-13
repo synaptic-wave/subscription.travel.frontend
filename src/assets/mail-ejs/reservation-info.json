@@ -1,0 +1,948 @@
+{
+  "code": 2000,
+  "message": "SUCCESS",
+  "data": {
+    "results": [
+      {
+        "user": {
+          "useragent": {
+            "country": "UZ",
+            "region": "TK",
+            "timezone": "Asia/Tashkent",
+            "city": "Tashkent",
+            "ll": [41.2615, 69.2177],
+            "metro": 0,
+            "area": 50,
+            "os": "OS X",
+            "browser": "Chrome",
+            "deviceType": "Desktop",
+            "user_last_login_date": "2024-06-17T19:14:22.970Z",
+            "user_ip": "213.230.116.208"
+          },
+          "user_first_name": "Salohiddin",
+          "user_last_name": "Jaloliddinov",
+          "user_language": "EN",
+          "user_nationality": "KR",
+          "user_email": "saloh224@gmail.com",
+          "user_oauth_type": "email",
+          "is_verified_user": true,
+          "isBlocked": false,
+          "createdAt": "2024-06-17T13:30:18.017Z",
+          "updatedAt": "2024-06-17T19:14:22.973Z",
+          "user_mobile_phone": "+998977506361",
+          "id": "66703a6aadcf795621691c0a"
+        },
+        "booking": {
+          "payment": [
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 5029
+            },
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 5366
+            }
+          ],
+          "bookings": [
+            {
+              "attributes": {
+                "locator": "Y4JHM8",
+                "status": "PAG",
+                "language": "ko"
+              },
+              "holder": {
+                "idPax": 3
+              },
+              "hotelId": "667077445c04e9e7fa41797b",
+              "status": "COMPLETED",
+              "externalBookingReference": "667077445c04e9e7fa417980",
+              "paxes": [
+                {
+                  "idPax": 1,
+                  "name": "Salohiddin",
+                  "surname": "Jaloliddinov",
+                  "age": 35,
+                  "phoneNumber": "+998977506361",
+                  "email": "saloh224@gmail.com",
+                  "nationality": "KR",
+                  "_id": "667077895c04e9e7fa417991"
+                },
+                {
+                  "idPax": 2,
+                  "name": "Synaptic",
+                  "surname": "Wave",
+                  "age": 35,
+                  "phoneNumber": "",
+                  "_id": "667077895c04e9e7fa417992"
+                },
+                {
+                  "idPax": 3,
+                  "name": "Salohiddin",
+                  "surname": "Jaloliddinov",
+                  "age": 35,
+                  "phoneNumber": "+998977506361",
+                  "email": "saloh224@gmail.com",
+                  "nationality": "KR",
+                  "_id": "667077895c04e9e7fa417993"
+                }
+              ],
+              "agenciesData": [
+                {
+                  "referencedAgency": false,
+                  "agencyCode": "634",
+                  "agencyName": "WaffleStay",
+                  "agencyHandledBy": "XML Agent",
+                  "agencyEmail": "jamshid@swave.kr",
+                  "agencyReference": "667077445c04e9e7fa417980",
+                  "_id": "667077895c04e9e7fa417994"
+                },
+                {
+                  "referencedAgency": true,
+                  "agencyCode": "0",
+                  "_id": "667077895c04e9e7fa417995"
+                }
+              ],
+              "items": [
+                {
+                  "attributes": {
+                    "itemId": "5855",
+                    "status": "OK",
+                    "start": "2024-07-17",
+                    "end": "2024-07-18"
+                  },
+                  "prices": {
+                    "totalFixAmounts": {
+                      "service": {
+                        "amount": "5366"
+                      },
+                      "gross": "5366",
+                      "net": "5366",
+                      "type": "S",
+                      "currencyType": "KRW"
+                    },
+                    "breakdown": [
+                      {
+                        "concept": "Base",
+                        "items": [
+                          {
+                            "amount": "5366",
+                            "_id": "667077895c04e9e7fa417998"
+                          }
+                        ],
+                        "_id": "667077895c04e9e7fa417997"
+                      }
+                    ]
+                  },
+                  "cancellationPolicy": {
+                    "firstDayCostCancellation": {
+                      "value": "2024-07-15",
+                      "hour": "23:59"
+                    },
+                    "currencyCode": "KRW",
+                    "type": "S",
+                    "description": "* Cancelling from 2024/06/17 at 00:00:00 up to 2024/07/15 at 23:58:59: 0 KRW * Cancelling from 2024/07/15 at 23:59:00 up to 2024/07/17 at 00:00:00: ₩&nbsp 5366   *Date and time is calculated based on local time of destination (GMT +07:00)",
+                    "policyRules": [
+                      {
+                        "dateFrom": "2024-06-17",
+                        "dateFromHour": "00:00",
+                        "dateTo": "2024-07-15",
+                        "dateToHour": "23:58",
+                        "type": "V",
+                        "fixedPrice": 0,
+                        "percentPrice": 0,
+                        "nights": 0,
+                        "applicationTypeNights": "Average",
+                        "_id": "667077895c04e9e7fa417999"
+                      },
+                      {
+                        "dateFrom": "2024-07-15",
+                        "dateFromHour": "23:59",
+                        "dateTo": "2024-07-17",
+                        "dateToHour": "00:00",
+                        "type": "V",
+                        "fixedPrice": 5366,
+                        "percentPrice": 0,
+                        "nights": 0,
+                        "applicationTypeNights": "Average",
+                        "_id": "667077895c04e9e7fa41799a"
+                      }
+                    ]
+                  },
+                  "hotelInfo": {
+                    "code": "JP08028W",
+                    "name": "Express O 91371 Wisma Nadira",
+                    "address": "Xpgr+Prc, Jl. Lintas Barat Penengahan, Kec. Lemong, 34876, Balik Bukit, Lampung Barat, Indonesia (ULP)"
+                  },
+                  "comments": [
+                    {
+                      "value": "<b>Room name</b><br/>Double\r\n<br/><br/><b>Details</b><br/>Car park YES (without additional debit notes).",
+                      "type": "HOT",
+                      "_id": "667077895c04e9e7fa41799b"
+                    }
+                  ],
+                  "hotelRooms": [
+                    {
+                      "roomCategory": {
+                        "value": "",
+                        "type": ""
+                      },
+                      "name": "Double",
+                      "relPaxes": [
+                        {
+                          "idPax": 1,
+                          "_id": "667077895c04e9e7fa41799d"
+                        },
+                        {
+                          "idPax": 2,
+                          "_id": "667077895c04e9e7fa41799e"
+                        }
+                      ],
+                      "_id": "667077895c04e9e7fa41799c"
+                    }
+                  ],
+                  "_id": "667077895c04e9e7fa417996"
+                }
+              ],
+              "createdAt": "2024-06-17T17:51:05.783Z",
+              "updatedAt": "2024-06-17T17:51:05.783Z",
+              "id": "667077895c04e9e7fa417990"
+            },
+            {
+              "attributes": {
+                "locator": "4ZG1CF",
+                "status": "PAG",
+                "language": "ko"
+              },
+              "holder": {
+                "idPax": 3
+              },
+              "hotelId": "667077445c04e9e7fa417977",
+              "status": "COMPLETED",
+              "externalBookingReference": "667077445c04e9e7fa417980",
+              "paxes": [
+                {
+                  "idPax": 1,
+                  "name": "Salohiddin",
+                  "surname": "Jaloliddinov",
+                  "age": 35,
+                  "phoneNumber": "+998977506361",
+                  "email": "saloh224@gmail.com",
+                  "nationality": "KR",
+                  "_id": "667077895c04e9e7fa4179a1"
+                },
+                {
+                  "idPax": 2,
+                  "name": "Synaptic",
+                  "surname": "Wave",
+                  "age": 35,
+                  "phoneNumber": "",
+                  "_id": "667077895c04e9e7fa4179a2"
+                },
+                {
+                  "idPax": 3,
+                  "name": "Salohiddin",
+                  "surname": "Jaloliddinov",
+                  "age": 35,
+                  "phoneNumber": "+998977506361",
+                  "email": "saloh224@gmail.com",
+                  "nationality": "KR",
+                  "_id": "667077895c04e9e7fa4179a3"
+                }
+              ],
+              "agenciesData": [
+                {
+                  "referencedAgency": false,
+                  "agencyCode": "634",
+                  "agencyName": "WaffleStay",
+                  "agencyHandledBy": "XML Agent",
+                  "agencyEmail": "jamshid@swave.kr",
+                  "agencyReference": "667077445c04e9e7fa417980",
+                  "_id": "667077895c04e9e7fa4179a4"
+                },
+                {
+                  "referencedAgency": true,
+                  "agencyCode": "0",
+                  "_id": "667077895c04e9e7fa4179a5"
+                }
+              ],
+              "items": [
+                {
+                  "attributes": {
+                    "itemId": "5854",
+                    "status": "OK",
+                    "start": "2024-07-17",
+                    "end": "2024-07-18"
+                  },
+                  "prices": {
+                    "totalFixAmounts": {
+                      "service": {
+                        "amount": "5029"
+                      },
+                      "gross": "5029",
+                      "net": "5029",
+                      "type": "S",
+                      "currencyType": "KRW"
+                    },
+                    "breakdown": [
+                      {
+                        "concept": "Base",
+                        "items": [
+                          {
+                            "amount": "5029",
+                            "_id": "667077895c04e9e7fa4179a8"
+                          }
+                        ],
+                        "_id": "667077895c04e9e7fa4179a7"
+                      }
+                    ]
+                  },
+                  "cancellationPolicy": {
+                    "firstDayCostCancellation": {
+                      "value": "2024-07-15",
+                      "hour": "23:59"
+                    },
+                    "currencyCode": "KRW",
+                    "type": "S",
+                    "description": "* Cancelling from 2024/06/17 at 00:00:00 up to 2024/07/15 at 23:58:59: 0 KRW * Cancelling from 2024/07/15 at 23:59:00 up to 2024/07/17 at 00:00:00: ₩&nbsp 5029   *Date and time is calculated based on local time of destination (GMT +07:00)",
+                    "policyRules": [
+                      {
+                        "dateFrom": "2024-06-17",
+                        "dateFromHour": "00:00",
+                        "dateTo": "2024-07-15",
+                        "dateToHour": "23:58",
+                        "type": "V",
+                        "fixedPrice": 0,
+                        "percentPrice": 0,
+                        "nights": 0,
+                        "applicationTypeNights": "Average",
+                        "_id": "667077895c04e9e7fa4179a9"
+                      },
+                      {
+                        "dateFrom": "2024-07-15",
+                        "dateFromHour": "23:59",
+                        "dateTo": "2024-07-17",
+                        "dateToHour": "00:00",
+                        "type": "V",
+                        "fixedPrice": 5028.7,
+                        "percentPrice": 0,
+                        "nights": 0,
+                        "applicationTypeNights": "Average",
+                        "_id": "667077895c04e9e7fa4179aa"
+                      }
+                    ]
+                  },
+                  "hotelInfo": {
+                    "code": "JP07851R",
+                    "name": "OYO 3303 Penginapan Putri Asih Sawarna",
+                    "address": "Sawarna, Bayah, Lebak Regency, Banten, 42393, Sukabumi Dowtown, Indonesia (SKU)"
+                  },
+                  "comments": [
+                    {
+                      "value": "<b>Room name</b><br/>Double\r\n<br/><br/><b>Details</b><br/>Car park YES (without additional debit notes).<br> Check-in hour 14:00 - .<br> Minimum check-in age 18.",
+                      "type": "HOT",
+                      "_id": "667077895c04e9e7fa4179ab"
+                    }
+                  ],
+                  "hotelRooms": [
+                    {
+                      "roomCategory": {
+                        "value": "",
+                        "type": ""
+                      },
+                      "name": "Double",
+                      "relPaxes": [
+                        {
+                          "idPax": 1,
+                          "_id": "667077895c04e9e7fa4179ad"
+                        },
+                        {
+                          "idPax": 2,
+                          "_id": "667077895c04e9e7fa4179ae"
+                        }
+                      ],
+                      "_id": "667077895c04e9e7fa4179ac"
+                    }
+                  ],
+                  "_id": "667077895c04e9e7fa4179a6"
+                }
+              ],
+              "createdAt": "2024-06-17T17:51:05.816Z",
+              "updatedAt": "2024-06-17T17:51:05.816Z",
+              "id": "667077895c04e9e7fa4179a0"
+            }
+          ]
+        }
+      },
+      {
+        "user": {
+          "useragent": {
+            "country": "UZ",
+            "region": "TK",
+            "timezone": "Asia/Tashkent",
+            "city": "Tashkent",
+            "ll": [41.2615, 69.2177],
+            "metro": 0,
+            "area": 50,
+            "os": "OS X",
+            "browser": "Chrome",
+            "deviceType": "Desktop",
+            "user_last_login_date": "2024-06-17T19:14:22.970Z",
+            "user_ip": "213.230.116.208"
+          },
+          "user_first_name": "Salohiddin",
+          "user_last_name": "Jaloliddinov",
+          "user_language": "EN",
+          "user_nationality": "KR",
+          "user_email": "saloh224@gmail.com",
+          "user_oauth_type": "email",
+          "is_verified_user": true,
+          "isBlocked": false,
+          "createdAt": "2024-06-17T13:30:18.017Z",
+          "updatedAt": "2024-06-17T19:14:22.973Z",
+          "user_mobile_phone": "+998977506361",
+          "id": "66703a6aadcf795621691c0a"
+        },
+        "booking": {
+          "payment": [
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 5543
+            }
+          ],
+          "bookings": [
+            {
+              "attributes": {
+                "locator": "X43ZF1",
+                "status": "PAG",
+                "language": "ko"
+              },
+              "holder": {
+                "idPax": 3
+              },
+              "hotelId": "6670780a5c04e9e7fa417a00",
+              "status": "COMPLETED",
+              "externalBookingReference": "6670780a5c04e9e7fa417a05",
+              "paxes": [
+                {
+                  "idPax": 1,
+                  "name": "Salohiddin",
+                  "surname": "Jaloliddinov",
+                  "age": 35,
+                  "phoneNumber": "+998977506361",
+                  "email": "saloh224@gmail.com",
+                  "nationality": "KR",
+                  "_id": "6670783d5c04e9e7fa417a15"
+                },
+                {
+                  "idPax": 2,
+                  "name": "Synaptic",
+                  "surname": "Wave",
+                  "age": 35,
+                  "phoneNumber": "",
+                  "_id": "6670783d5c04e9e7fa417a16"
+                },
+                {
+                  "idPax": 3,
+                  "name": "Salohiddin",
+                  "surname": "Jaloliddinov",
+                  "age": 35,
+                  "phoneNumber": "+998977506361",
+                  "email": "saloh224@gmail.com",
+                  "nationality": "KR",
+                  "_id": "6670783d5c04e9e7fa417a17"
+                }
+              ],
+              "agenciesData": [
+                {
+                  "referencedAgency": false,
+                  "agencyCode": "634",
+                  "agencyName": "WaffleStay",
+                  "agencyHandledBy": "XML Agent",
+                  "agencyEmail": "jamshid@swave.kr",
+                  "agencyReference": "6670780a5c04e9e7fa417a05",
+                  "_id": "6670783d5c04e9e7fa417a18"
+                },
+                {
+                  "referencedAgency": true,
+                  "agencyCode": "0",
+                  "_id": "6670783d5c04e9e7fa417a19"
+                }
+              ],
+              "items": [
+                {
+                  "attributes": {
+                    "itemId": "5856",
+                    "status": "OK",
+                    "start": "2024-07-17",
+                    "end": "2024-07-18"
+                  },
+                  "prices": {
+                    "totalFixAmounts": {
+                      "service": {
+                        "amount": "5543"
+                      },
+                      "gross": "5543",
+                      "net": "5543",
+                      "type": "S",
+                      "currencyType": "KRW"
+                    },
+                    "breakdown": [
+                      {
+                        "concept": "Base",
+                        "items": [
+                          {
+                            "amount": "5543",
+                            "_id": "6670783d5c04e9e7fa417a1c"
+                          }
+                        ],
+                        "_id": "6670783d5c04e9e7fa417a1b"
+                      }
+                    ]
+                  },
+                  "cancellationPolicy": {
+                    "firstDayCostCancellation": {
+                      "value": "2024-07-14",
+                      "hour": "23:59"
+                    },
+                    "currencyCode": "KRW",
+                    "type": "S",
+                    "description": "* Cancelling from 2024/06/17 at 00:00:00 up to 2024/07/14 at 23:58:59: 0 KRW * Cancelling from 2024/07/14 at 23:59:00 up to 2024/07/17 at 00:00:00: ₩&nbsp 5543   *Date and time is calculated based on local time of destination (GMT +07:00)",
+                    "policyRules": [
+                      {
+                        "dateFrom": "2024-06-17",
+                        "dateFromHour": "00:00",
+                        "dateTo": "2024-07-14",
+                        "dateToHour": "23:58",
+                        "type": "V",
+                        "fixedPrice": 0,
+                        "percentPrice": 0,
+                        "nights": 0,
+                        "applicationTypeNights": "Average",
+                        "_id": "6670783d5c04e9e7fa417a1d"
+                      },
+                      {
+                        "dateFrom": "2024-07-14",
+                        "dateFromHour": "23:59",
+                        "dateTo": "2024-07-17",
+                        "dateToHour": "00:00",
+                        "type": "V",
+                        "fixedPrice": 5542.81,
+                        "percentPrice": 0,
+                        "nights": 0,
+                        "applicationTypeNights": "Average",
+                        "_id": "6670783d5c04e9e7fa417a1e"
+                      }
+                    ]
+                  },
+                  "hotelInfo": {
+                    "code": "JP07855M",
+                    "name": "Spot On 2859 Fatan Costel",
+                    "address": "Jl. Pramuka, 0, 43281, Cianjur, Puncak, Indonesia (PK1)"
+                  },
+                  "comments": [
+                    {
+                      "value": "<b>Room name</b><br/>DOUBLE STANDARD\r\n<br/><br/><b>Details</b><br/>Car park YES (without additional debit notes).<br> Check-in hour 14:00 - 00:00.<br> Minimum check-in age 18.",
+                      "type": "HOT",
+                      "_id": "6670783d5c04e9e7fa417a1f"
+                    }
+                  ],
+                  "hotelRooms": [
+                    {
+                      "roomCategory": {
+                        "value": "",
+                        "type": ""
+                      },
+                      "name": "DOUBLE STANDARD",
+                      "relPaxes": [
+                        {
+                          "idPax": 1,
+                          "_id": "6670783d5c04e9e7fa417a21"
+                        },
+                        {
+                          "idPax": 2,
+                          "_id": "6670783d5c04e9e7fa417a22"
+                        }
+                      ],
+                      "_id": "6670783d5c04e9e7fa417a20"
+                    }
+                  ],
+                  "_id": "6670783d5c04e9e7fa417a1a"
+                }
+              ],
+              "createdAt": "2024-06-17T17:54:05.025Z",
+              "updatedAt": "2024-06-17T17:54:05.025Z",
+              "id": "6670783d5c04e9e7fa417a14"
+            }
+          ]
+        }
+      },
+      {
+        "user": {
+          "useragent": {
+            "country": "UZ",
+            "region": "TK",
+            "timezone": "Asia/Tashkent",
+            "city": "Tashkent",
+            "ll": [41.2615, 69.2177],
+            "metro": 0,
+            "area": 50,
+            "os": "OS X",
+            "browser": "Chrome",
+            "deviceType": "Desktop",
+            "user_last_login_date": "2024-06-17T19:14:22.970Z",
+            "user_ip": "213.230.116.208"
+          },
+          "user_first_name": "Salohiddin",
+          "user_last_name": "Jaloliddinov",
+          "user_language": "EN",
+          "user_nationality": "KR",
+          "user_email": "saloh224@gmail.com",
+          "user_oauth_type": "email",
+          "is_verified_user": true,
+          "isBlocked": false,
+          "createdAt": "2024-06-17T13:30:18.017Z",
+          "updatedAt": "2024-06-17T19:14:22.973Z",
+          "user_mobile_phone": "+998977506361",
+          "id": "66703a6aadcf795621691c0a"
+        },
+        "booking": {
+          "payment": [
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 11954
+            },
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 11954
+            }
+          ],
+          "bookings": []
+        }
+      },
+      {
+        "user": {
+          "useragent": {
+            "country": "UZ",
+            "region": "TK",
+            "timezone": "Asia/Tashkent",
+            "city": "Tashkent",
+            "ll": [41.2615, 69.2177],
+            "metro": 0,
+            "area": 50,
+            "os": "OS X",
+            "browser": "Chrome",
+            "deviceType": "Desktop",
+            "user_last_login_date": "2024-06-17T19:14:22.970Z",
+            "user_ip": "213.230.116.208"
+          },
+          "user_first_name": "Salohiddin",
+          "user_last_name": "Jaloliddinov",
+          "user_language": "EN",
+          "user_nationality": "KR",
+          "user_email": "saloh224@gmail.com",
+          "user_oauth_type": "email",
+          "is_verified_user": true,
+          "isBlocked": false,
+          "createdAt": "2024-06-17T13:30:18.017Z",
+          "updatedAt": "2024-06-17T19:14:22.973Z",
+          "user_mobile_phone": "+998977506361",
+          "id": "66703a6aadcf795621691c0a"
+        },
+        "booking": {
+          "payment": [
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 5029
+            },
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 5366
+            }
+          ],
+          "bookings": []
+        }
+      },
+      {
+        "user": {
+          "useragent": {
+            "country": "UZ",
+            "region": "TK",
+            "timezone": "Asia/Tashkent",
+            "city": "Tashkent",
+            "ll": [41.2615, 69.2177],
+            "metro": 0,
+            "area": 50,
+            "os": "OS X",
+            "browser": "Chrome",
+            "deviceType": "Desktop",
+            "user_last_login_date": "2024-06-17T19:14:22.970Z",
+            "user_ip": "213.230.116.208"
+          },
+          "user_first_name": "Salohiddin",
+          "user_last_name": "Jaloliddinov",
+          "user_language": "EN",
+          "user_nationality": "KR",
+          "user_email": "saloh224@gmail.com",
+          "user_oauth_type": "email",
+          "is_verified_user": true,
+          "isBlocked": false,
+          "createdAt": "2024-06-17T13:30:18.017Z",
+          "updatedAt": "2024-06-17T19:14:22.973Z",
+          "user_mobile_phone": "+998977506361",
+          "id": "66703a6aadcf795621691c0a"
+        },
+        "booking": {
+          "payment": [
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 10732
+            },
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 10442
+            }
+          ],
+          "bookings": []
+        }
+      },
+      {
+        "user": {
+          "useragent": {
+            "country": "UZ",
+            "region": "TK",
+            "timezone": "Asia/Tashkent",
+            "city": "Tashkent",
+            "ll": [41.2615, 69.2177],
+            "metro": 0,
+            "area": 50,
+            "os": "OS X",
+            "browser": "Chrome",
+            "deviceType": "Desktop",
+            "user_last_login_date": "2024-06-17T19:14:22.970Z",
+            "user_ip": "213.230.116.208"
+          },
+          "user_first_name": "Salohiddin",
+          "user_last_name": "Jaloliddinov",
+          "user_language": "EN",
+          "user_nationality": "KR",
+          "user_email": "saloh224@gmail.com",
+          "user_oauth_type": "email",
+          "is_verified_user": true,
+          "isBlocked": false,
+          "createdAt": "2024-06-17T13:30:18.017Z",
+          "updatedAt": "2024-06-17T19:14:22.973Z",
+          "user_mobile_phone": "+998977506361",
+          "id": "66703a6aadcf795621691c0a"
+        },
+        "booking": {
+          "payment": [
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 10732
+            },
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 10442
+            }
+          ],
+          "bookings": []
+        }
+      },
+      {
+        "user": {
+          "useragent": {
+            "country": "UZ",
+            "region": "TK",
+            "timezone": "Asia/Tashkent",
+            "city": "Tashkent",
+            "ll": [41.2615, 69.2177],
+            "metro": 0,
+            "area": 50,
+            "os": "OS X",
+            "browser": "Chrome",
+            "deviceType": "Desktop",
+            "user_last_login_date": "2024-06-17T19:14:22.970Z",
+            "user_ip": "213.230.116.208"
+          },
+          "user_first_name": "Salohiddin",
+          "user_last_name": "Jaloliddinov",
+          "user_language": "EN",
+          "user_nationality": "KR",
+          "user_email": "saloh224@gmail.com",
+          "user_oauth_type": "email",
+          "is_verified_user": true,
+          "isBlocked": false,
+          "createdAt": "2024-06-17T13:30:18.017Z",
+          "updatedAt": "2024-06-17T19:14:22.973Z",
+          "user_mobile_phone": "+998977506361",
+          "id": "66703a6aadcf795621691c0a"
+        },
+        "booking": {
+          "payment": [
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 10442
+            },
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 10732
+            }
+          ],
+          "bookings": []
+        }
+      },
+      {
+        "user": {
+          "useragent": {
+            "country": "UZ",
+            "region": "TK",
+            "timezone": "Asia/Tashkent",
+            "city": "Tashkent",
+            "ll": [41.2615, 69.2177],
+            "metro": 0,
+            "area": 50,
+            "os": "OS X",
+            "browser": "Chrome",
+            "deviceType": "Desktop",
+            "user_last_login_date": "2024-06-17T19:14:22.970Z",
+            "user_ip": "213.230.116.208"
+          },
+          "user_first_name": "Salohiddin",
+          "user_last_name": "Jaloliddinov",
+          "user_language": "EN",
+          "user_nationality": "KR",
+          "user_email": "saloh224@gmail.com",
+          "user_oauth_type": "email",
+          "is_verified_user": true,
+          "isBlocked": false,
+          "createdAt": "2024-06-17T13:30:18.017Z",
+          "updatedAt": "2024-06-17T19:14:22.973Z",
+          "user_mobile_phone": "+998977506361",
+          "id": "66703a6aadcf795621691c0a"
+        },
+        "booking": {
+          "payment": [
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 10732
+            },
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 10442
+            }
+          ],
+          "bookings": []
+        }
+      },
+      {
+        "user": {
+          "useragent": {
+            "country": "UZ",
+            "region": "TK",
+            "timezone": "Asia/Tashkent",
+            "city": "Tashkent",
+            "ll": [41.2615, 69.2177],
+            "metro": 0,
+            "area": 50,
+            "os": "OS X",
+            "browser": "Chrome",
+            "deviceType": "Desktop",
+            "user_last_login_date": "2024-06-17T19:14:22.970Z",
+            "user_ip": "213.230.116.208"
+          },
+          "user_first_name": "Salohiddin",
+          "user_last_name": "Jaloliddinov",
+          "user_language": "EN",
+          "user_nationality": "KR",
+          "user_email": "saloh224@gmail.com",
+          "user_oauth_type": "email",
+          "is_verified_user": true,
+          "isBlocked": false,
+          "createdAt": "2024-06-17T13:30:18.017Z",
+          "updatedAt": "2024-06-17T19:14:22.973Z",
+          "user_mobile_phone": "+998977506361",
+          "id": "66703a6aadcf795621691c0a"
+        },
+        "booking": {
+          "payment": [
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 10732
+            },
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 10442
+            }
+          ],
+          "bookings": []
+        }
+      },
+      {
+        "user": {
+          "useragent": {
+            "country": "UZ",
+            "region": "TK",
+            "timezone": "Asia/Tashkent",
+            "city": "Tashkent",
+            "ll": [41.2615, 69.2177],
+            "metro": 0,
+            "area": 50,
+            "os": "OS X",
+            "browser": "Chrome",
+            "deviceType": "Desktop",
+            "user_last_login_date": "2024-06-17T19:14:22.970Z",
+            "user_ip": "213.230.116.208"
+          },
+          "user_first_name": "Salohiddin",
+          "user_last_name": "Jaloliddinov",
+          "user_language": "EN",
+          "user_nationality": "KR",
+          "user_email": "saloh224@gmail.com",
+          "user_oauth_type": "email",
+          "is_verified_user": true,
+          "isBlocked": false,
+          "createdAt": "2024-06-17T13:30:18.017Z",
+          "updatedAt": "2024-06-17T19:14:22.973Z",
+          "user_mobile_phone": "+998977506361",
+          "id": "66703a6aadcf795621691c0a"
+        },
+        "booking": {
+          "payment": [
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 10732
+            },
+            {
+              "paymentMethod": "CARD",
+              "currencyType": "KRW",
+              "amount": 10442
+            }
+          ],
+          "bookings": []
+        }
+      }
+    ],
+    "page": 1,
+    "limit": 10,
+    "totalPages": 4,
+    "totalResults": 34
+  }
+}
