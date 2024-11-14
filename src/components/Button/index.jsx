@@ -20,9 +20,11 @@ export function Button({
       {...props}
       disabled={disabled || isLoading}
       className={classNames(
-        'outline-none text-sm h-fit',
-        size === 'md' && 'py-[14px] px-[20px] font-[500]',
-        size === 'sm' && 'py-[10px] px-[20px]',
+        'outline-none h-fit',
+        size === 'lg' &&
+          'py-[16px] text-[20px] text-base leading-[23px] font-medium',
+        size === 'md' && 'py-[14px] px-[20px] font-[500] text-sm',
+        size === 'sm' && 'py-[10px] px-[20px] text-sm',
         size === 'xs' &&
           'py-[8px] px-[16px] text-[13px] leading-[19px] font-[400]',
         (leftIcon || rightIcon) && 'flex items-center justify-center gap-[8px]',

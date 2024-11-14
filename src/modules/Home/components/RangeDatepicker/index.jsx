@@ -4,6 +4,7 @@ import moment from 'moment'
 import korean from '@/locales/kr_th'
 import classNames from 'classnames'
 import CalendarIcon from '@/assets/icons/calendar.svg?react'
+import { MdCalendarMonth } from 'react-icons/md'
 
 export function RangeDatepicker({
   leftIcon,
@@ -88,32 +89,25 @@ export function RangeDatepicker({
         maxDate={date?.length === 2 ? null : calculateMaxDate(date[0])} // Calculate maxDate dynamically based on the start date
         render={
           isInOneInput ? (
-            <div className='w-full flex items-center gap-[10px]'>
-              <div className='w-[100%]'>
-                {!!label && (
-                  <label className='block text-sm leading-[16px] mb-[11px]'>
-                    {label}
-                  </label>
-                )}
-                <div
-                  {...containerProps}
-                  className={classNames(
-                    !containerProps.className
-                      ? 'font-[500] text-sm w-full flex items-center justify-between px-[16px] py-[14px] relative transition-all ease-in-out rounded-[10px] overflow-hidden outline outline-1 outline-gray-100 hover:outline-primary-600'
-                      : containerProps.className,
-                    (!value || value?.length < 1) && 'text-[#A3A5B8]'
-                  )}
-                  onClick={() => datePickerRef.current.openCalendar()}
-                >
-                  {value?.length > 0
-                    ? `${moment(value[0].toDate()).format('YYYY/MM/DD')} ~ ${
-                        value[1]
-                          ? moment(value[1]?.toDate()).format('YYYY/MM/DD')
-                          : '체크아웃 날짜'
-                      }`
-                    : labelCheckIn}
-                  <CalendarIcon />
-                </div>
+            <div className='w-[100%]'>
+              {!!label && (
+                <label className='block text-sm leading-[16px] mb-[11px]'>
+                  {label}
+                </label>
+              )}
+              <div
+                {...containerProps}
+                className='text-base leading-[20px] w-full flex items-center justify-between px-[15px] py-[15px] relative transition-all ease-in-out overflow-hidden border border-grey-100 hover:border-primary'
+                onClick={() => datePickerRef.current.openCalendar()}
+              >
+                <MdCalendarMonth fontSize='23px' color='#909090' />
+                {value?.length > 0
+                  ? `${moment(value[0].toDate()).format('YYYY/MM/DD')} ~ ${
+                      value[1]
+                        ? moment(value[1]?.toDate()).format('YYYY/MM/DD')
+                        : '체크아웃 날짜'
+                    }`
+                  : labelCheckIn}
               </div>
             </div>
           ) : (

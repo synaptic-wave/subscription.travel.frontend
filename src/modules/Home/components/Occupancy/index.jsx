@@ -7,6 +7,7 @@ import { useOutsideClick } from '@/hooks/useOutsideClick'
 import { useEffect, useRef, useState } from 'react'
 import TrashIcon from '@/assets/icons/trash.svg?react'
 import classNames from 'classnames'
+import { FaBed, FaUser } from 'react-icons/fa'
 
 export function Occupancy({
   value,
@@ -43,18 +44,14 @@ export function Occupancy({
         <div
           {...containerProps}
           onClick={() => setOpen((prev) => !prev)}
-          className={classNames(
-            !containerProps.className
-              ? 'text-sm justify-center flex items-center gap-[10px] px-[16px] py-[14px] relative transition-all ease-in-out rounded-[10px] overflow-hidden outline outline-1 outline-gray-100 hover:outline-primary-600'
-              : containerProps.className
-          )}
+          className='text-sm flex justify-start items-center gap-[10px] px-[15px] py-[14.5px] relative transition-all ease-in-out overflow-hidden border border-grey-100 hover:border-primary'
         >
-          <div className='flex items-center gap-[6px] font-[500]'>
-            {<BedIcon />}
+          <div className='flex items-center gap-[6px] text-base leading-[18px]'>
+            <FaBed fontSize='24px' color='#909090' />
             객실 {rooms?.length}
           </div>
-          <div className='flex items-center gap-[6px] font-[500]'>
-            {<PersonIcon />}
+          <div className='flex items-center gap-[6px] text-base leading-[18px]'>
+            <FaUser fontSize='20px' color='#909090' />
             인원 {totalPerson}
           </div>
         </div>

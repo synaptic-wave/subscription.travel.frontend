@@ -24,6 +24,7 @@ import { components } from 'react-select'
 import { DateObject } from 'react-multi-date-picker'
 import locationTypes from '@/consts/locationTypes'
 import { FaBuilding } from 'react-icons/fa'
+import { HiLocationMarker } from 'react-icons/hi'
 
 export const locationIcons = {
   REG: <LocationIcon />,
@@ -391,7 +392,7 @@ export function SearchFormV2({ setIsOpenNotFound, setIsOpenSearchHotel }) {
           </button>
         </div>
 
-        <div className='grid grid-cols-4 gap-[30px]'>
+        <div className='grid grid-cols-4 gap-[30px] w-full'>
           <Controller
             control={control}
             name='location'
@@ -402,7 +403,7 @@ export function SearchFormV2({ setIsOpenNotFound, setIsOpenSearchHotel }) {
               formState: { errors }
             }) => (
               <AutoComplete
-                icon={<LocationIcon />}
+                icon={<HiLocationMarker fontSize='24px' color='#5A7BF0' />}
                 placeholder='나라, 지역, 호텔명으로 검색해보세요!'
                 name={name}
                 label='목적지'
@@ -484,16 +485,13 @@ export function SearchFormV2({ setIsOpenNotFound, setIsOpenSearchHotel }) {
             onChange={onChange}
             isRedIcons={true}
             label='객실 및 인원'
-            containerProps={{
-              className:
-                'text-sm h-[48px] justify-center flex items-center gap-[10px] px-[16px] py-[12px] relative transition-all ease-in-out overflow-hidden outline outline-1 outline-grey-100 hover:outline-grey-100'
-            }}
           />
 
           <Button
             type='submit'
-            className='w-full flex-1 mt-[25px]'
+            className='w-full flex-1 mt-[27px]'
             isLoading={createSession.isLoading}
+            size='lg'
           >
             검색
           </Button>
