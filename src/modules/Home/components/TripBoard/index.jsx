@@ -136,7 +136,7 @@ export const TripBoard = ({
           />
         </div>
 
-        {!isLoading && data?.results?.length > 0 && (
+        {/* {!isLoading && data?.results?.length > 0 && (
           <motion.div
             initial='hidden'
             animate='visible'
@@ -173,7 +173,7 @@ export const TripBoard = ({
             <Skeleton className='sm:h-[266px] sm:w-[266px] h-[182px] rounded-full' />
             <Skeleton className='sm:h-[266px] sm:w-[266px] h-[182px] rounded-full' />
           </div>
-        )}
+        )} */}
       </div>
     </>
   )

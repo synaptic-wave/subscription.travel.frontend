@@ -12,6 +12,7 @@ import { TripBoard } from './components/TripBoard'
 import { PreviewHotels } from './components/PreviewHotels'
 import { CouponEventModal } from './components/CouponEvent'
 import { SubHeader } from './components/SubHeader'
+import { SalesBanner } from './components/SalesBanner'
 
 export function Home() {
   const [isOpenNotFound, setIsOpenNotFound] = useState(false)
@@ -60,8 +61,9 @@ export function Home() {
           setIsOpenSearchHotel={setIsOpenSearchHotel}
         /> */}
 
-        {/* <Banner /> */}
-
+        <Banner />
+        <SalesBanner />
+        <RecommendedTravel />
         {/* <RecommendedTravel />
         <CashbackHotels />
         <UpTargetDirections />

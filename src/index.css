@@ -4,7 +4,7 @@
 
 :root {
   font-family: 'Paperlogy', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: #161a3f;
+  color: #374248;
   background-color: #fff;
   font-weight: 400;
   font-synthesis: none;
@@ -17,7 +17,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: none; */
   outline: none;
 }
 
