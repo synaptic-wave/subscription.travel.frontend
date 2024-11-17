@@ -29,7 +29,7 @@ export function Button({
         size === 'xs' &&
           'py-[8px] px-[16px] text-[13px] leading-[19px] font-[400]',
         (leftIcon || rightIcon) && 'flex items-center justify-center gap-[8px]',
-        variant === 'secondary' && notDisabled && 'bg-[#A8ABBF] text-white',
+        variant === 'secondary' && notDisabled && 'bg-[#606060] text-white',
         variant === 'default' &&
           notDisabled &&
           'bg-primary text-white hover:opacity-[0.8]',

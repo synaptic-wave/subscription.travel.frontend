@@ -6,8 +6,8 @@ export function Tabs({ items, value, onChange }) {
       {items?.map((item) => (
         <button
           className={classNames(
-            'sm:text-base scale-box font-bold text-[13px] border border-[#FF3838] text-[#FF3838] border-solid py-[8px] px-[20px] rounded-[100px] break-keep whitespace-nowrap',
-            value.id === item.id && 'bg-[#FF3838] text-white'
+            'sm:text-base scale-box font-semibold text-[13px] border border-primary text-primary border-solid py-[8px] px-[20px] rounded-[100px] break-keep whitespace-nowrap',
+            value.id === item.id && 'bg-primary text-white'
           )}
           onClick={() => onChange(item)}
           key={item.id}
