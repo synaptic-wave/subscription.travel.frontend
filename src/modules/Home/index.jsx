@@ -4,7 +4,7 @@ import { SubHeader } from "./components/SubHeader";
 import Tabs from "@/components/Tabs";
 import { Hotel } from "./Hotel";
 import { Aviation } from "./Aviation";
-import { InsuranceSection } from "./components/InsuranceSection";
+import { Insurance } from "./components/InsuranceSection";
 
 const elements = [
   {
@@ -21,7 +21,7 @@ const elements = [
 const renderer = {
   0: Hotel,
   1: Aviation,
-  2: InsuranceSection
+  2: Insurance
 };
 
 export function Home() {
