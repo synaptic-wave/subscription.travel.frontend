@@ -1,4 +1,4 @@
-import { SearchFormV2 } from '../SearchFromV2'
+import { SearchFormV2 } from "../SearchFromV2";
 
 export const TripBoard = ({ setIsOpenNotFound, setIsOpenSearchHotel }) => {
   return (
@@ -47,5 +47,5 @@ export const TripBoard = ({ setIsOpenNotFound, setIsOpenSearchHotel }) => {
           </div>
         )} */}
     </>
-  )
-}
+  );
+};
