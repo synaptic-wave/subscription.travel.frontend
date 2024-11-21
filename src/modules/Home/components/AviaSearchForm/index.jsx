@@ -25,6 +25,7 @@ import { DateObject } from 'react-multi-date-picker'
 import locationTypes from '@/consts/locationTypes'
 import { FaBuilding } from 'react-icons/fa'
 import { HiLocationMarker } from 'react-icons/hi'
+import { DestinationSelect } from '../DestinationSelect'
 
 export const locationIcons = {
   REG: <LocationIcon />,
@@ -217,7 +218,7 @@ const secondDayOfNextMonth = new DateObject({
   day: today.day + 1
 })
 
-export function SearchFormV2({ setIsOpenNotFound, setIsOpenSearchHotel }) {
+export function AviaSearchForm({ setIsOpenNotFound, setIsOpenSearchHotel }) {
   const navigate = useNavigate()
   const [type, setType] = useState(searchTypes[0])
   const [isOpen, setIsOpen] = useState(false)
@@ -401,42 +402,7 @@ export function SearchFormV2({ setIsOpenNotFound, setIsOpenSearchHotel }) {
             render={({
               field: { onChange, value, name },
               formState: { errors }
-            }) => (
-              <AutoComplete
-                icon={<HiLocationMarker fontSize='24px' color='#5A7BF0' />}
-                placeholder='나라, 지역, 호텔명으로 검색해보세요!'
-                name={name}
-                label='목적지'
-                value={value}
-                errors={errors}
-                options={options}
-                openMenuOnClick={false}
-                isLoading={isLoading}
-                getOptionLabel={(opt) =>
-                  opt?.source?.kr_name || opt?.source?.en_name
-                }
-                getOptionValue={(opt) =>
-                  opt?.source?.JPDCode || opt?.source?.attributes?.JPCode
-                }
-                onChange={onChange}
-                onInputChange={loadOptions}
-                styles={{
-                  control: {
-                    outline: 'none'
-                  }
-                }}
-                components={{
-                  Group,
-                  Option: (props) => (
-                    <Option
-                      {...props}
-                      expandedJPDCodes={expandedJPDCodes}
-                      toggleJPDCode={toggleJPDCode}
-                    />
-                  )
-                }}
-              />
-            )}
+            }) => <DestinationSelect label='목적지 / 도착지' />}
           />
 
           <Controller
@@ -456,7 +422,14 @@ export function SearchFormV2({ setIsOpenNotFound, setIsOpenSearchHotel }) {
                   isInOneInput
                   fullWidth
                   isRedColor
-                  label='체크인/체크아웃'
+                  labelProps={{
+                    className: 'text-black text-lg'
+                  }}
+                  label='출발일 선택 / 도착일 선택'
+                  containerProps={{
+                    className:
+                      'font-[500] h-[48px] text-sm w-full flex items-center justify-between px-[16px] py-[12px] relative transition-all ease-in-out overflow-hidden outline outline-1 outline-grey-100 hover:outline-grey-100 text-lg'
+                  }}
                   errors={errors}
                   name={name}
                   labelCheckIn='체크인'

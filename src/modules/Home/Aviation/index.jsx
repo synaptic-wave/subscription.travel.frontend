@@ -12,6 +12,7 @@ import { PreviewHotels } from '../components/PreviewHotels'
 import { CouponEventModal } from '../components/CouponEvent'
 import { SalesBanner } from '../components/SalesBanner'
 import bannerImg from '@/assets/images/aviation_banner.png'
+import { AviaSearchForm } from '../components/AviaSearchForm'
 
 export function Aviation() {
   const [isOpenNotFound, setIsOpenNotFound] = useState(false)
@@ -27,12 +28,9 @@ export function Aviation() {
   return (
     <>
       <div className='container'>
-        <TripBoard
+        <AviaSearchForm
           setIsOpenNotFound={setIsOpenNotFound}
           setIsOpenSearchHotel={setIsOpenSearchHotel}
-          recommendedLocations={data?.results?.find(
-            (item) => item.template === 'group-card'
-          )}
         />
 
         <Banner
@@ -51,6 +49,7 @@ export function Aviation() {
             </>
           }
         />
+
         <SalesBanner />
         <RecommendedTravel
           recommendedLocations={data?.results?.find(
