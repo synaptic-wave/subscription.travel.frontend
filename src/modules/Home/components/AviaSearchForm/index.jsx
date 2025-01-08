@@ -26,6 +26,8 @@ import locationTypes from '@/consts/locationTypes'
 import { FaBuilding } from 'react-icons/fa'
 import { HiLocationMarker } from 'react-icons/hi'
 import { DestinationSelect } from '../DestinationSelect'
+import { SelectSeat } from '../SelectSeat'
+import { SelectPassenger } from '../SelectPassenger'
 
 export const locationIcons = {
   REG: <LocationIcon />,
@@ -393,70 +395,68 @@ export function AviaSearchForm({ setIsOpenNotFound, setIsOpenSearchHotel }) {
           </button>
         </div>
 
-        <div className='grid grid-cols-4 gap-[30px] w-full'>
-          <Controller
-            control={control}
-            name='location'
-            cacheOptions
-            rules={{ required: true }} // TODO: uncomment this field
-            render={({
-              field: { onChange, value, name },
-              formState: { errors }
-            }) => <DestinationSelect label='목적지 / 도착지' />}
-          />
+        <div className='flex items-center gap-[30px] w-full'>
+          <div className='w-[25%]'>
+            <Controller
+              control={control}
+              name='location'
+              cacheOptions
+              rules={{ required: true }} // TODO: uncomment this field
+              render={({
+                field: { onChange, value, name },
+                formState: { errors }
+              }) => <DestinationSelect label='목적지 / 도착지' />}
+            />
+          </div>
+          <div className='w-[25%]'>
+            <Controller
+              control={control}
+              name='date'
+              rules={{ required: true }}
+              render={({
+                field: { onChange, name, value },
+                formState: { errors }
+              }) => (
+                <>
+                  <RangeDatepicker
+                    value={value}
+                    icon={<RedCalendarIcon />}
+                    onChange={onChange}
+                    format={'YYYY/MM/DD'}
+                    isInOneInput
+                    fullWidth
+                    isRedColor
+                    labelProps={{
+                      className: 'text-black text-lg'
+                    }}
+                    label='출발일 선택 / 도착일 선택'
+                    containerProps={{
+                      className:
+                        'font-[500] h-[48px] text-sm w-full flex items-center justify-between px-[16px] py-[12px] relative transition-all ease-in-out overflow-hidden outline outline-1 outline-grey-100 hover:outline-grey-100 text-lg'
+                    }}
+                    errors={errors}
+                    name={name}
+                    labelCheckIn='체크인'
+                    labelCheckOut='체크아웃'
+                    className='w-full'
+                  />
+                </>
+              )}
+            />
+          </div>
 
-          <Controller
-            control={control}
-            name='date'
-            rules={{ required: true }}
-            render={({
-              field: { onChange, name, value },
-              formState: { errors }
-            }) => (
-              <>
-                <RangeDatepicker
-                  value={value}
-                  icon={<RedCalendarIcon />}
-                  onChange={onChange}
-                  format={'YYYY/MM/DD'}
-                  isInOneInput
-                  fullWidth
-                  isRedColor
-                  labelProps={{
-                    className: 'text-black text-lg'
-                  }}
-                  label='출발일 선택 / 도착일 선택'
-                  containerProps={{
-                    className:
-                      'font-[500] h-[48px] text-sm w-full flex items-center justify-between px-[16px] py-[12px] relative transition-all ease-in-out overflow-hidden outline outline-1 outline-grey-100 hover:outline-grey-100 text-lg'
-                  }}
-                  errors={errors}
-                  name={name}
-                  labelCheckIn='체크인'
-                  labelCheckOut='체크아웃'
-                  className='w-full'
-                />
-              </>
-            )}
-          />
-
-          <Occupancy
-            onConfirm={onSaveOccupancy}
-            rooms={rooms}
-            value={occupancies}
-            onChange={onChange}
-            isRedIcons={true}
-            label='객실 및 인원'
-          />
-
-          <Button
-            type='submit'
-            className='w-full flex-1 mt-[27px]'
-            isLoading={createSession.isLoading}
-            size='lg'
-          >
-            검색
-          </Button>
+          <div className='w-[50%] grid grid-cols-3 gap-[30px]'>
+            <SelectSeat />
+            <SelectPassenger />
+            <Button
+              type='submit'
+              className='w-full flex-1 mt-[27px]'
+              isLoading={createSession.isLoading}
+              size='lg'
+            >
+              검색
+            </Button>
+          </div>
         </div>
       </form>
 

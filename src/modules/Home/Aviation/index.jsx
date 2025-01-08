@@ -13,9 +13,26 @@ import { CouponEventModal } from '../components/CouponEvent'
 import { SalesBanner } from '../components/SalesBanner'
 import bannerImg from '@/assets/images/aviation_banner.png'
 import { AviaSearchForm } from '../components/AviaSearchForm'
+import classNames from 'classnames'
+
+const items = [
+  {
+    title: '왕복',
+    value: 1
+  },
+  {
+    title: '편도',
+    value: 2
+  },
+  {
+    title: '다구간',
+    value: 3
+  }
+]
 
 export function Aviation() {
   const [isOpenNotFound, setIsOpenNotFound] = useState(false)
+  const [activeTab, setActiveTab] = useState(1)
   const [isOpenSearchHotel, setIsOpenSearchHotel] = useState(false)
   const { data } = useGetSections({
     params: {
@@ -28,6 +45,18 @@ export function Aviation() {
   return (
     <>
       <div className='container'>
+        <div className='flex items-center gap-[24px] mb-[36px]'>
+          {items.map((item) => (
+            <button
+              className={classNames('text-[20px] font-normal leading-[24px]', {
+                'text-primary-600 font-bold': activeTab === item.value
+              })}
+              onClick={() => setActiveTab(item.value)}
+            >
+              {item.title}
+            </button>
+          ))}
+        </div>
         <AviaSearchForm
           setIsOpenNotFound={setIsOpenNotFound}
           setIsOpenSearchHotel={setIsOpenSearchHotel}

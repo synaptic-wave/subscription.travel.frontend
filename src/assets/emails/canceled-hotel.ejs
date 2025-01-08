@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  style="
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  "
+>
+  <head
+    style="
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    "
+  >
+    <meta
+      charset="UTF-8"
+      style="
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+          sans-serif;
+      "
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      style="
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+          sans-serif;
+      "
+    />
+    <title
+      style="
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+          sans-serif;
+      "
+    >
+      Document
+    </title>
+  </head>
+  <body
+    style="
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    "
+  >
+    <div
+      class="container"
+      style="
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0;
+        font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+          sans-serif;
+        width: 100%;
+        max-width: none;
+      "
+    >
+      <table style="margin-top: 50px; width: 100%">
+        <tbody>
+          <tr>
+            <td style="text-align: left">
+              <img
+                class="logo"
+                src="https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/logo%20(1).png?alt=media&token=23b40e4b-c2e5-4d4c-9176-0aeb4c4bdbd2"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  width: 104px;
+                  height: 16px;
+                  object-fit: contain;
+                "
+              />
+            </td>
+            <td style="text-align: right">
+              <img
+                class="logo"
+                src="https://firebasestorage.googleapis.com/v0/b/app-snab.appspot.com/o/image%201995.png?alt=media&token=b3774037-fc2c-4084-83b5-396003dfdfc0"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  width: 78px;
+                  height: 21px;
+                  object-fit: contain;
+                "
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h1
+        class="title"
+        style="
+          box-sizing: border-box;
+          margin: 16px 0 30px;
+          padding: 0;
+          font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+            sans-serif;
+
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: -0.78px;
+          line-height: 20px;
+          color: #f14a76;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #d2d2d2;
+        "
+      >
+        호텔 취소 완료
+        <span
+          style="
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+              sans-serif;
+            color: #161a3f;
+          "
+          >안내</span
+        >
+      </h1>
+
+      <p style="font-size: 16px; line-height: 24px">
+        안녕하세요, <b style="color: #008458">김하나</b>님.<br />
+        트래블버킷을 이용해 주셔서 감사합니다.<br /><br />
+
+        본 메일은 트래블버킷 호텔 서비스의 예약/결제/사용에 관한 공지 메일
+        입니다.<br />
+        <b>취소하신 호텔의 요금 정보, 취소 정보를 재확인 바랍니다.</b>
+      </p>
+
+      <% hotels.forEach(function(item,index) { %>
+      <div
+        class="hotels"
+        style="
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+            sans-serif;
+          margin-top: 26px;
+          margin-bottom: 33px;
+        "
+      >
+        <p
+          class="booked-amount"
+          style="
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+              sans-serif;
+            color: #161a3f;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: -0.54px;
+            margin-bottom: 13px;
+            line-height: 18px;
+          "
+        >
+          예약내역 (<%=index+1%>건)
+        </p>
+        <!-- <table
+          class="payment-info"
+          style="
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+              sans-serif;
+            border-spacing: 0;
+            border-top: 1px solid #161a3f;
+            width: 100%;
+            display: none;
+          "
+        >
+          <tbody
+            style="
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+              font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                sans-serif;
+            "
+          >
+            <tr
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+              "
+            >
+              <td
+                class="booking-code"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 15px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  text-align: center;
+                  color: #5c5f79;
+                  font-size: 14px;
+                  font-weight: 400;
+                  letter-spacing: -0.42px;
+                  border-bottom: 1px solid #eaeaf4;
+                  background: #fafafd;
+                "
+              >
+                <p
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    color: #161a3f;
+                    font-size: 13px;
+                    letter-spacing: -0.39px;
+                    font-weight: 400;
+                  "
+                >
+                  예약번호
+                </p>
+                <span
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: -0.36px;
+                    display: block;
+                    color: #161a3f !important;
+                  "
+                  ><%=item.bookingCode%></span
+                >
+              </td>
+              <td
+                class="booking-info"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 16px 20px 0 !important;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  color: #161a3f;
+                  font-size: 14px;
+                  font-weight: 400;
+                  letter-spacing: -0.42px;
+                  border-bottom: 1px solid #eaeaf4;
+                  text-align: left !important;
+                "
+              >
+                <p
+                  class="name"
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    color: #161a3f;
+                    font-size: 14px !important;
+                    font-weight: 500;
+                    letter-spacing: -0.45px;
+                  "
+                >
+                  <%=item.hotelName%>
+                </p>
+                <p
+                  class="amount"
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    font-size: 20px !important;
+                    color: #ff176b !important;
+                    letter-spacing: -0.4px !important;
+                  "
+                >
+                  <b
+                    style="
+                      box-sizing: border-box;
+                      margin: 0;
+                      padding: 0;
+                      font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                        Arial, sans-serif;
+                    "
+                    ><%=item.hotelPrice%></b
+                  >
+                  원
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      margin: 0;
+                      padding: 0;
+                      font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                        Arial, sans-serif;
+                      color: #161a3f;
+                      font-size: 14px;
+                      letter-spacing: -0.28px;
+                      font-weight: 400;
+                    "
+                    >(수수료 포함)</span
+                  >
+                </p>
+              </td>
+              <% if (item.cancellationPolicy) { %>
+              <td
+                class="cancellation-policy"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0 20px !important;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  color: #06f !important;
+                  font-size: 13px !important;
+                  font-weight: 400 !important;
+                  letter-spacing: -0.39px !important;
+                  border-bottom: 1px solid #eaeaf4;
+                  text-align: left !important;
+                "
+              >
+                <%=item.cancellationPolicy%>
+              </td>
+              <% } else { %>
+              <td
+                class="cancellation-policy red"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0 20px !important;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  color: #06f !important;
+                  font-size: 13px !important;
+                  font-weight: 400 !important;
+                  letter-spacing: -0.39px !important;
+                  border-bottom: 1px solid #eaeaf4;
+                  text-align: left !important;
+                "
+              >
+                취소 환불 불가
+              </td>
+              <% } %>
+            </tr>
+          </tbody>
+        </table> -->
+        <div
+          class="table-mobile"
+          style="
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+              sans-serif;
+            display: block;
+          "
+        >
+          <table
+            style="
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+              font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                sans-serif;
+              border-spacing: 0;
+              border-top: 1px solid #161a3f;
+              width: 100%;
+              padding-bottom: 16px;
+              border-bottom: 1px solid #eaeaf4;
+            "
+          >
+            <thead
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+                background-color: #fafafd;
+              "
+            >
+              <tr
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                "
+              >
+                <th
+                  class="booking-code"
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 15px 0;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    text-align: center;
+                  "
+                >
+                  <p
+                    style="
+                      box-sizing: border-box;
+                      margin: 0;
+                      padding: 0;
+                      font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                        Arial, sans-serif;
+                      color: #161a3f;
+                      font-size: 13px;
+                      letter-spacing: -0.39px;
+                      font-weight: 400;
+                    "
+                  >
+                    예약번호
+                  </p>
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      margin: 0;
+                      padding: 0;
+                      font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                        Arial, sans-serif;
+                      font-size: 18px;
+                      font-weight: 700;
+                      letter-spacing: -0.36px;
+                      display: block;
+                      color: #161a3f !important;
+                    "
+                    ><%=item.bookingCode%></span
+                  >
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+              "
+            >
+              <tr
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                "
+              >
+                <td
+                  class="booking-info"
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 16px 20px 0 !important;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    text-align: left !important;
+                  "
+                >
+                  <p
+                    class="name"
+                    style="
+                      box-sizing: border-box;
+                      margin: 0;
+                      padding: 0;
+                      font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                        Arial, sans-serif;
+                      color: #161a3f;
+                      font-size: 14px !important;
+                      font-weight: 500;
+                      letter-spacing: -0.45px;
+                    "
+                  >
+                    <%=item.hotelName%> (외 1건)
+                  </p>
+                  <p
+                    class="amount"
+                    style="
+                      box-sizing: border-box;
+                      margin: 0;
+                      padding: 0;
+                      font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                        Arial, sans-serif;
+                      font-size: 20px !important;
+                      color: #f14a76 !important;
+                      letter-spacing: -0.4px !important;
+                    "
+                  >
+                    <b
+                      style="
+                        box-sizing: border-box;
+                        margin: 0;
+                        padding: 0;
+                        font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                          Arial, sans-serif;
+                      "
+                      ><%=item.hotelPrice%></b
+                    >
+                    원
+                    <span
+                      style="
+                        box-sizing: border-box;
+                        margin: 0;
+                        padding: 0;
+                        font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                          Arial, sans-serif;
+                        color: #161a3f;
+                        font-size: 14px;
+                        letter-spacing: -0.28px;
+                        font-weight: 400;
+                      "
+                      >(수수료 포함)</span
+                    >
+                  </p>
+                </td>
+              </tr>
+              <tr
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                "
+              >
+                <% if (item.cancellationPolicy) { %>
+                <td
+                  class="cancellation-policy"
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0 20px !important;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    text-align: left !important;
+                    color: #008458 !important;
+                    font-size: 13px !important;
+                    font-weight: 700 !important;
+                    letter-spacing: -0.39px !important;
+                  "
+                >
+                  <%=item.cancellationPolicy%>
+                </td>
+                <% } else { %>
+                <td
+                  class="cancellation-policy red"
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0 20px !important;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    text-align: left !important;
+                    color: #f14a76 !important;
+                    font-size: 13px !important;
+                    font-weight: 700 !important;
+                    letter-spacing: -0.39px !important;
+                  "
+                >
+                  취소 환불 불가
+                </td>
+                <% } %>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <table
+          class="payment-info hotel-info"
+          style="
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+              sans-serif;
+            border-spacing: 0;
+            border-top: 1px solid #161a3f;
+            width: 100%;
+            display: none;
+          "
+        >
+          <thead
+            style="
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+              font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                sans-serif;
+            "
+          >
+            <tr
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+              "
+            >
+              <th
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 15px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  text-align: left;
+                  color: #161a3f;
+                  font-size: 14px;
+                  letter-spacing: -0.42px;
+                  background: #fafafd;
+                  font-weight: 500 !important;
+                "
+              >
+                객실 명
+              </th>
+              <th
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 15px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  text-align: left;
+                  color: #161a3f;
+                  font-size: 14px;
+                  letter-spacing: -0.42px;
+                  background: #fafafd;
+                  font-weight: 500 !important;
+                "
+              >
+                성인
+              </th>
+              <th
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 15px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  text-align: left;
+                  color: #161a3f;
+                  font-size: 14px;
+                  letter-spacing: -0.42px;
+                  background: #fafafd;
+                  font-weight: 500 !important;
+                "
+              >
+                아동
+              </th>
+              <th
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 15px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  text-align: left;
+                  color: #161a3f;
+                  font-size: 14px;
+                  letter-spacing: -0.42px;
+                  background: #fafafd;
+                  font-weight: 500 !important;
+                "
+              >
+                선택사항
+              </th>
+              <th
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 15px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  text-align: left;
+                  color: #161a3f;
+                  font-size: 14px;
+                  letter-spacing: -0.42px;
+                  background: #fafafd;
+                  font-weight: 500 !important;
+                "
+              >
+                체크인
+              </th>
+              <th
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 15px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  text-align: left;
+                  color: #161a3f;
+                  font-size: 14px;
+                  letter-spacing: -0.42px;
+                  background: #fafafd;
+                  font-weight: 500 !important;
+                "
+              >
+                체크아웃
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            style="
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+              font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                sans-serif;
+            "
+          >
+            <% item.hotelRooms.forEach(function(room) { %>
+            <tr
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+              "
+            >
+              <td
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 15px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  color: #5c5f79;
+                  font-size: 14px;
+                  font-weight: 400;
+                  letter-spacing: -0.42px;
+                  border-bottom: 1px solid #eaeaf4;
+                  background: #fafafd;
+                  background-color: #fff !important;
+                "
+              >
+                <%=room.name%>
+              </td>
+              <td
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 15px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  color: #161a3f;
+                  font-size: 14px;
+                  font-weight: 400;
+                  letter-spacing: -0.42px;
+                  border-bottom: 1px solid #eaeaf4;
+                  background-color: #fff !important;
+                "
+              >
+                <%=item.adults%>
+              </td>
+              <td
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 15px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  color: #161a3f;
+                  font-size: 14px;
+                  font-weight: 400;
+                  letter-spacing: -0.42px;
+                  border-bottom: 1px solid #eaeaf4;
+                  background-color: #fff !important;
+                "
+              >
+                <%=item.child%>
+              </td>
+              <td
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 15px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  color: #161a3f;
+                  font-size: 14px;
+                  font-weight: 400;
+                  letter-spacing: -0.42px;
+                  border-bottom: 1px solid #eaeaf4;
+                  background-color: #fff !important;
+                "
+              >
+                <%=item.roomType%>
+              </td>
+              <td
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 15px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  color: #161a3f;
+                  font-size: 14px;
+                  font-weight: 400;
+                  letter-spacing: -0.42px;
+                  border-bottom: 1px solid #eaeaf4;
+                  background-color: #fff !important;
+                "
+              >
+                <%=item.checkIn%>
+              </td>
+              <td
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 15px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  color: #161a3f;
+                  font-size: 14px;
+                  font-weight: 400;
+                  letter-spacing: -0.42px;
+                  border-bottom: 1px solid #eaeaf4;
+                  background-color: #fff !important;
+                "
+              >
+                <%=item.checkOut%>
+              </td>
+            </tr>
+            <% }); %>
+          </tbody>
+        </table>
+        <% item.hotelRooms.forEach(function(room) { %>
+        <div
+          class="hotel-info-table"
+          style="
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+              sans-serif;
+            display: block;
+            border-top: 1px solid #161a3f;
+          "
+        >
+          <table
+            style="
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+              font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                sans-serif;
+              border-spacing: 0;
+              width: 100%;
+            "
+          >
+            <tbody
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+              "
+            >
+              <tr
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                "
+              >
+                <td
+                  class="label"
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 10px 14px;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    background: #fafafd;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    width: 120px;
+                    border-bottom: 1px solid #eaeaf4;
+                  "
+                >
+                  객실명
+                </td>
+                <td
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 10px 14px;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    font-size: 12px;
+                    line-height: 16px;
+                    border-bottom: 1px solid #eaeaf4;
+                  "
+                >
+                  <%=room.name%>
+                </td>
+              </tr>
+              <tr
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                "
+              >
+                <td
+                  class="label"
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 10px 14px;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    background: #fafafd;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    width: 120px;
+                    border-bottom: 1px solid #eaeaf4;
+                  "
+                >
+                  성인
+                </td>
+                <td
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 10px 14px;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    font-size: 12px;
+                    line-height: 16px;
+                    border-bottom: 1px solid #eaeaf4;
+                  "
+                >
+                  <%=item.adults%>
+                </td>
+              </tr>
+              <tr
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                "
+              >
+                <td
+                  class="label"
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 10px 14px;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    background: #fafafd;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    width: 120px;
+                    border-bottom: 1px solid #eaeaf4;
+                  "
+                >
+                  아동
+                </td>
+                <td
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 10px 14px;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    font-size: 12px;
+                    line-height: 16px;
+                    border-bottom: 1px solid #eaeaf4;
+                  "
+                >
+                  <%=item.child%>
+                </td>
+              </tr>
+              <tr
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                "
+              >
+                <td
+                  class="label"
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 10px 14px;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    background: #fafafd;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    width: 120px;
+                    border-bottom: 1px solid #eaeaf4;
+                  "
+                >
+                  선택사항
+                </td>
+                <td
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 10px 14px;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    font-size: 12px;
+                    line-height: 16px;
+                    border-bottom: 1px solid #eaeaf4;
+                  "
+                >
+                  <%=item.roomType%>
+                </td>
+              </tr>
+              <tr
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                "
+              >
+                <td
+                  class="label"
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 10px 14px;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    background: #fafafd;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    width: 120px;
+                    border-bottom: 1px solid #eaeaf4;
+                  "
+                >
+                  체크인
+                </td>
+                <td
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 10px 14px;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    font-size: 12px;
+                    line-height: 16px;
+                    border-bottom: 1px solid #eaeaf4;
+                  "
+                >
+                  <%=item.checkIn%>
+                </td>
+              </tr>
+              <tr
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                "
+              >
+                <td
+                  class="label"
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 10px 14px;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    background: #fafafd;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    width: 120px;
+                    border-bottom: 1px solid #eaeaf4;
+                  "
+                >
+                  체크아웃
+                </td>
+                <td
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 10px 14px;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                    font-size: 12px;
+                    line-height: 16px;
+                    border-bottom: 1px solid #eaeaf4;
+                  "
+                >
+                  <%=item.checkOut%>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <% }); %>
+        <table
+          class="address-table"
+          style="
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+              sans-serif;
+            border-spacing: 0;
+            border-bottom: 1px solid #161a3f;
+            padding-bottom: 8px;
+            width: 100%;
+          "
+        >
+          <tbody
+            style="
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+              font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                sans-serif;
+            "
+          >
+            <tr
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+              "
+            >
+              <td
+                class="address-table-td"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 10px 14px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  font-size: 12px;
+                  color: #161a3f;
+                  line-height: 16px;
+                  font-weight: 500;
+                  width: 120px;
+                "
+              >
+                호텔 주소
+              </td>
+              <td
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 10px 14px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  font-size: 12px;
+                  color: #161a3f;
+                  line-height: 16px;
+                  font-weight: 400;
+                "
+              >
+                <%=item.hotelAddress%>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <% }); %>
+      <p
+        class="booked-amount"
+        style="
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+            sans-serif;
+          color: #f14a76;
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: -0.54px;
+          margin-bottom: 13px;
+          line-height: 18px;
+        "
+      >
+        취소내역
+      </p>
+      <table
+        class="payment-info hotel-info"
+        style="
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+            sans-serif;
+          border-spacing: 0;
+          border-top: 1px solid #161a3f;
+          width: 100%;
+          display: none;
+        "
+      >
+        <thead
+          style="
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+              sans-serif;
+          "
+        >
+          <tr
+            style="
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+              font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                sans-serif;
+            "
+          >
+            <th
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 15px;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+                text-align: left;
+                color: #161a3f;
+                font-size: 14px;
+                letter-spacing: -0.42px;
+                background: #fafafd;
+                font-weight: 500 !important;
+              "
+            >
+              취소방법
+            </th>
+            <th
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 15px;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+                text-align: left;
+                color: #161a3f;
+                font-size: 14px;
+                letter-spacing: -0.42px;
+                background: #fafafd;
+                font-weight: 500 !important;
+              "
+            >
+              취소일시
+            </th>
+            <th
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 15px;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+                text-align: left;
+                color: #161a3f;
+                font-size: 14px;
+                letter-spacing: -0.42px;
+                background: #fafafd;
+                font-weight: 500 !important;
+              "
+            >
+              결제금액
+            </th>
+            <th
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 15px;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+                text-align: left;
+                color: #161a3f;
+                font-size: 14px;
+                letter-spacing: -0.42px;
+                background: #fafafd;
+                font-weight: 500 !important;
+              "
+            >
+              쿠폰할인
+            </th>
+            <th
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 15px;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+                text-align: left;
+                color: #161a3f;
+                font-size: 14px;
+                letter-spacing: -0.42px;
+                background: #fafafd;
+                font-weight: 500 !important;
+              "
+            >
+              취소금액
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          style="
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+              sans-serif;
+          "
+        >
+          <tr
+            style="
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+              font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                sans-serif;
+            "
+          >
+            <td
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 15px;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+                color: #5c5f79;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: -0.42px;
+                border-bottom: 1px solid #eaeaf4;
+                background: #fafafd;
+                background-color: #fff !important;
+              "
+            >
+              <%=hotels[0].paymentMethod%>
+            </td>
+            <td
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 15px;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+                color: #161a3f;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: -0.42px;
+                border-bottom: 1px solid #eaeaf4;
+                background-color: #fff !important;
+              "
+            >
+              <%=hotels[0].paymentDate%>
+            </td>
+            <td
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 15px;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+                color: #161a3f;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: -0.42px;
+                border-bottom: 1px solid #eaeaf4;
+                background-color: #fff !important;
+              "
+            >
+              <b
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                "
+                ><%=paidAmount%></b
+              >원
+            </td>
+            <td
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 15px;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+                color: #161a3f;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: -0.42px;
+                border-bottom: 1px solid #eaeaf4;
+                background-color: #fff !important;
+              "
+            >
+              <b
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                "
+                ><%=couponPrice%></b
+              >원
+            </td>
+            <td
+              class="red"
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 15px;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+                color: #ff176b !important;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: -0.42px;
+                border-bottom: 1px solid #eaeaf4;
+                background-color: #fff !important;
+              "
+            >
+              <b
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                "
+                ><%=totalPrice%></b
+              >원
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div
+        class="hotel-info-table"
+        style="
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+            sans-serif;
+          display: block;
+          border-top: 1px solid #161a3f;
+        "
+      >
+        <table
+          style="
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+              sans-serif;
+            border-spacing: 0;
+            width: 100%;
+          "
+        >
+          <tbody
+            style="
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+              font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                sans-serif;
+            "
+          >
+            <tr
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+              "
+            >
+              <td
+                class="label"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 10px 14px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  background: #fafafd;
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 16px;
+                  width: 120px;
+                  border-bottom: 1px solid #eaeaf4;
+                "
+              >
+                결제방법
+              </td>
+              <td
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 10px 14px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  font-size: 12px;
+                  line-height: 16px;
+                  border-bottom: 1px solid #eaeaf4;
+                "
+              >
+                <%=hotels[0].paymentMethod%>
+              </td>
+            </tr>
+            <tr
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+              "
+            >
+              <td
+                class="label"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 10px 14px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  background: #fafafd;
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 16px;
+                  width: 120px;
+                  border-bottom: 1px solid #eaeaf4;
+                "
+              >
+                결제일시
+              </td>
+              <td
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 10px 14px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  font-size: 12px;
+                  line-height: 16px;
+                  border-bottom: 1px solid #eaeaf4;
+                "
+              >
+                <%=hotels[0].date%>
+              </td>
+            </tr>
+            <tr
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+              "
+            >
+              <td
+                class="label"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 10px 14px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  background: #fafafd;
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 16px;
+                  width: 120px;
+                  border-bottom: 1px solid #eaeaf4;
+                "
+              >
+                결제금액
+              </td>
+              <td
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 10px 14px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  font-size: 12px;
+                  line-height: 16px;
+                  border-bottom: 1px solid #eaeaf4;
+                "
+              >
+                <b
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                  "
+                  ><%=paidAmount%></b
+                >원
+              </td>
+            </tr>
+            <tr
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+              "
+            >
+              <td
+                class="label"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 10px 14px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  background: #fafafd;
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 16px;
+                  width: 120px;
+                  border-bottom: 1px solid #eaeaf4;
+                "
+              >
+                결제금액
+              </td>
+              <td
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 10px 14px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  font-size: 12px;
+                  line-height: 16px;
+                  border-bottom: 1px solid #eaeaf4;
+                "
+              >
+                <b
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                  "
+                  ><%=couponPrice%></b
+                >원
+              </td>
+            </tr>
+            <tr
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+              "
+            >
+              <td
+                class="label"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 10px 14px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  background: #fafafd;
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 16px;
+                  width: 120px;
+                  border-bottom: 1px solid #eaeaf4;
+                "
+              >
+                실 결제금액
+              </td>
+              <td
+                class="red"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 10px 14px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  font-size: 12px;
+                  line-height: 16px;
+                  border-bottom: 1px solid #eaeaf4;
+                  color: #ff176b !important;
+                "
+              >
+                <b
+                  style="
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                    font-family: Noto Sans KR, system-ui, Avenir, Helvetica,
+                      Arial, sans-serif;
+                  "
+                  ><%=totalPrice%></b
+                >원
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <ul
+        style="
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+            sans-serif;
+          margin-top: 20px;
+          padding-left: 15px;
+        "
+      >
+        <li
+          style="
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+              sans-serif;
+            color: #8d8fa2;
+            font-size: 13px;
+            line-height: 24px;
+            letter-spacing: -0.39px;
+          "
+        >
+          자세한 예약 내역은 예약내역에서 확인하세요.
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+              sans-serif;
+            color: #8d8fa2;
+            font-size: 13px;
+            line-height: 24px;
+            letter-spacing: -0.39px;
+          "
+        >
+          본인이 결제한 내역이 아닌 경우, 고객센터로 문의하세요.
+        </li>
+      </ul>
+      <!-- <table
+        class="table-button"
+        style="
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+            sans-serif;
+          border-spacing: 0;
+          margin-top: 30px;
+          width: 100%;
+        "
+      >
+        <tr
+          style="
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+              sans-serif;
+          "
+        >
+          <td
+            style="
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+              font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                sans-serif;
+              text-align: center;
+            "
+          >
+            <a
+              href="<%=link%>"
+              target="_blank"
+              style="
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                  sans-serif;
+              "
+            >
+              <button
+                class="button"
+                style="
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 14px 48px;
+                  font-family: Noto Sans KR, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  border: 1px solid #2d40ff;
+                  background-color: #2d40ff;
+                  color: #fff;
+                  font-size: 14px;
+                  font-weight: 500;
+                  letter-spacing: -0.28px;
+                "
+              >
+                예약조회 바로가기
+              </button>
+            </a>
+          </td>
+        </tr>
+      </table> -->
+    </div>
+  </body>
+</html>
