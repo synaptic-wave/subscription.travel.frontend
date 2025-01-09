@@ -1,11 +1,19 @@
 import starIcon from "@/assets/icons/star-orange.svg";
 import { Button, Input } from "@/components/index";
+import { nationalities } from "@/consts/nationality";
+import { AutoComplete } from "@/modules/Home/components/Autocomplete";
+import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 
-export const MembershipForm = () => {
-  const { control, handleSubmit, watch } = useForm();
+export const MembershipForm = ({ onClick }) => {
+  const { control, handleSubmit } = useForm();
 
-  const onSubmit = () => {};
+  const [searchNationality, setSearchNationality] = useState("");
+
+  const onSubmit = (vals) => {
+    console.log(vals);
+    onClick(vals);
+  };
 
   return (
     <div className="w-full max-w-[375px] flex flex-col gap-6 mt-[110px] min-h-[60vh] mx-auto">
@@ -98,6 +106,111 @@ export const MembershipForm = () => {
             />
           )}
         />
+
+        <div className="flex items-end justify-between gap-7">
+          <Controller
+            name="phone_number"
+            control={control}
+            render={({ field: { value, name, onChange } }) => (
+              <Input
+                value={value}
+                name={name}
+                onChange={onChange}
+                label="휴대폰 번호 입력(필수)"
+                className="flex-1"
+                inputClassName="rounded-none"
+                placeholder="01024541245"
+              />
+            )}
+          />
+
+          <Button>인증완료</Button>
+        </div>
+
+        <Controller
+          name="surname"
+          control={control}
+          render={({ field: { value, name, onChange } }) => (
+            <Input
+              value={value}
+              name={name}
+              onChange={onChange}
+              label="성 (영문사용)(필수)"
+              className="flex-1"
+              inputClassName="rounded-none"
+              placeholder="Hong"
+            />
+          )}
+        />
+
+        <Controller
+          name="name"
+          control={control}
+          render={({ field: { value, name, onChange } }) => (
+            <Input
+              value={value}
+              name={name}
+              onChange={onChange}
+              label="이름 (영문사용)(필수)"
+              className="flex-1"
+              inputClassName="rounded-none"
+              placeholder="Gildong"
+            />
+          )}
+        />
+
+        <Controller
+          control={control}
+          name="nationality"
+          // rules={{ required: true }}
+          render={({
+            field: { onChange, value, name },
+            formState: { errors }
+          }) => (
+            <AutoComplete
+              name={name}
+              icon={null}
+              value={value}
+              label="국적 선택(필수)"
+              placeholder="국적을 선택하세요"
+              // className="sm:min-w-[15%] sm:max-w-[15%] sm:w-[15%]"
+              defaultValue={nationalities.find((nat) => nat.value === "KR")}
+              options={nationalities.filter((item) =>
+                item.name
+                  .toLowerCase()
+                  .includes(searchNationality.toLowerCase())
+              )}
+              getOptionLabel={(opt) => opt.name}
+              getOptionValue={(opt) => opt.value}
+              onChange={onChange}
+              onInputChange={(val) => setSearchNationality(val)}
+            />
+          )}
+        />
+
+        <Controller
+          name="referral_code"
+          control={control}
+          render={({ field: { value, name, onChange } }) => (
+            <Input
+              value={value}
+              name={name}
+              onChange={onChange}
+              label="추천코드 입력"
+              className="flex-1"
+              inputClassName="rounded-none"
+              placeholder="예) 123456 / 없으면 빈칸으로 두시면 됩니다. "
+            />
+          )}
+        />
+
+        <span className="text-[13px] text-[#DC231E]">
+          추천코드를 입력하시면 추가 할인 혜택이 제공됩니다.
+        </span>
+
+        <Button type="submit" className="mb-[100px]">
+          결제페이지 이동
+        </Button>
       </form>
     </div>
   );

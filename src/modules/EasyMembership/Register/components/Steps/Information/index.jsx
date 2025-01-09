@@ -33,7 +33,7 @@ const Components = {
   [memberTypes.KAKAO]: KakaoMembership
 };
 
-export const MemberInformation = () => {
+export const MemberInformation = ({ onSubmitForm }) => {
   const [memberType, setMemberType] = useState();
 
   const handleSelectMembership = (val) => {
@@ -43,7 +43,7 @@ export const MemberInformation = () => {
   const MembershipComponent = Components[memberType];
 
   if (memberType) {
-    return <MembershipComponent />;
+    return <MembershipComponent onSubmitForm={onSubmitForm} />;
   }
 
   return (

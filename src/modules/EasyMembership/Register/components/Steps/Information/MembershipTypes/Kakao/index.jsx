@@ -8,11 +8,16 @@ const STEPS = {
   FORM: "form"
 };
 
-export const KakaoMembership = () => {
+export const KakaoMembership = ({ onSubmitForm }) => {
   const [step, setStep] = useState(STEPS.AGREEMENT);
 
+  console.log(onSubmitForm);
   const handleSubmitAgreement = () => {
     setStep(STEPS.FORM);
+  };
+
+  const handleSubmit = (vals) => {
+    onSubmitForm(vals);
   };
 
   if (step === STEPS.AGREEMENT) {
@@ -20,7 +25,7 @@ export const KakaoMembership = () => {
   }
 
   if (step === STEPS.FORM) {
-    return <MembershipForm />;
+    return <MembershipForm onClick={handleSubmit} />;
   }
 
   return (
