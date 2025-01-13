@@ -11,7 +11,6 @@ const STEPS = {
 export const KakaoMembership = ({ onSubmitForm }) => {
   const [step, setStep] = useState(STEPS.AGREEMENT);
 
-  console.log(onSubmitForm);
   const handleSubmitAgreement = () => {
     setStep(STEPS.FORM);
   };

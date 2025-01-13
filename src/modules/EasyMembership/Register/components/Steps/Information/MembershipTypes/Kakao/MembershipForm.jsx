@@ -9,7 +9,7 @@ export const MembershipForm = ({ onClick }) => {
   const { control, handleSubmit } = useForm();
 
   const [searchNationality, setSearchNationality] = useState("");
-
+  console.log(onClick);
   const onSubmit = (vals) => {
     console.log(vals);
     onClick(vals);

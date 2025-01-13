@@ -4,18 +4,18 @@ import { Title } from "./components/Title";
 import { MemberInformation } from "./components/Steps/Information";
 import { useState } from "react";
 import { PaymentInformation } from "./components/Steps/Payment";
+import { CompleteRegistration } from "./components/Steps/Complete";
 
 const StepComponents = {
   0: MemberInformation,
   1: PaymentInformation,
-  2: PaymentInformation
+  2: CompleteRegistration
 };
 
 export default function EasyMembershipRegister() {
   const [activeStep, setActiveStep] = useState(0);
 
   const handleSubmitPersonalForm = () => {
-    console.log("asdsad");
     setActiveStep(1);
   };
 
