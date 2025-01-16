@@ -58,10 +58,10 @@ export function Aviation() {
             </button>
           ))}
         </div>
-        <AviaSearchForm
+        {/* <AviaSearchForm
           setIsOpenNotFound={setIsOpenNotFound}
           setIsOpenSearchHotel={setIsOpenSearchHotel}
-        />
+        /> */}
 
         <Banner
           img={bannerImg}
