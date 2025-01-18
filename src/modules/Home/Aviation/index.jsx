@@ -1,28 +1,17 @@
-import { useEffect, useState } from 'react'
-import { Banner } from '../components/Banner'
-import { CashbackHotels } from '../components/CashbackHotels'
-import { RecommendedTravel } from '../components/RecommendedTravel'
-import { SearchForm } from '../components/SearchFrom'
-import { NoRoomDialog } from '../../SearchResult/components/NoRoomDialog'
-import { SearchDialog } from '../../SearchResult/components/SearchDialog'
-import { UpTargetDirections } from '../components/UpTargetDirections'
+import { useState } from 'react'
 import { useGetSections } from '@/services/section.service'
-import { TripBoard } from '../components/TripBoard'
-import { PreviewHotels } from '../components/PreviewHotels'
-import { CouponEventModal } from '../components/CouponEvent'
-import { SalesBanner } from '../components/SalesBanner'
-import bannerImg from '@/assets/images/aviation_banner.png'
-import { AviaSearchForm } from '../components/AviaSearchForm'
 import classNames from 'classnames'
+import { RoundTrip } from './RoundTrip'
+import { OneWay } from './OneWay'
 
 const items = [
   {
     title: '왕복',
-    value: 1
+    value: 'round-trip'
   },
   {
     title: '편도',
-    value: 2
+    value: 'one-way'
   },
   {
     title: '다구간',
@@ -30,10 +19,14 @@ const items = [
   }
 ]
 
+const components = {
+  'round-trip': <RoundTrip />,
+  'one-way': <OneWay />
+}
+
 export function Aviation() {
-  const [isOpenNotFound, setIsOpenNotFound] = useState(false)
-  const [activeTab, setActiveTab] = useState(1)
-  const [isOpenSearchHotel, setIsOpenSearchHotel] = useState(false)
+  const [activeTab, setActiveTab] = useState('round-trip')
+
   const { data } = useGetSections({
     params: {
       page: 1,
@@ -42,59 +35,23 @@ export function Aviation() {
     }
   })
 
+  const Renderer = components[activeTab]
+
   return (
-    <>
-      <div className='container'>
-        <div className='flex items-center gap-[24px] mb-[36px]'>
-          {items.map((item) => (
-            <button
-              className={classNames('text-[20px] font-normal leading-[24px]', {
-                'text-primary-600 font-bold': activeTab === item.value
-              })}
-              onClick={() => setActiveTab(item.value)}
-            >
-              {item.title}
-            </button>
-          ))}
-        </div>
-        <AviaSearchForm
-          setIsOpenNotFound={setIsOpenNotFound}
-          setIsOpenSearchHotel={setIsOpenSearchHotel}
-        />
-
-        <Banner
-          img={bannerImg}
-          content={
-            <>
-              <p className='text-[48px] leading-[64px] font-bold text-primary mb-[2px]'>
-                15개 항공사 150개 노선
-              </p>
-              <p className='text-[28px] leading-[37px]'>
-                항공 발권 수수료 면제
-              </p>
-              <p className='text-[18px] leading-[24px]'>
-                온라인 최저가 대비 55,788원 절약 (항공포함)
-              </p>
-            </>
-          }
-        />
-
-        <SalesBanner />
-        <RecommendedTravel
-          recommendedLocations={data?.results?.find(
-            (item) => item.template === 'group-card'
-          )}
-        />
+    <div className='container'>
+      <div className='flex items-center gap-[24px] mb-[36px]'>
+        {items.map((item) => (
+          <button
+            className={classNames('text-[20px] font-normal leading-[24px]', {
+              'text-primary-600 font-bold': activeTab === item.value
+            })}
+            onClick={() => setActiveTab(item.value)}
+          >
+            {item.title}
+          </button>
+        ))}
       </div>
-
-      <NoRoomDialog
-        isOpen={isOpenNotFound}
-        onClose={() => setIsOpenNotFound(false)}
-      />
-      <SearchDialog
-        isOpen={isOpenSearchHotel}
-        onClose={() => setIsOpenSearchHotel(false)}
-      />
-    </>
+      {Renderer}
+    </div>
   )
 }
