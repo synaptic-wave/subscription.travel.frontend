@@ -37,10 +37,10 @@ export function Button({
         variant === "secondary-white" &&
           notDisabled &&
           "text-[#020202] bg-white hover:opacity-[0.7]",
+        isLoading && "flex items-center justify-center",
         (disabled || isLoading) &&
           variant !== "unstyled" &&
           "bg-[#EAEAF4] text-[#A3A5B8]",
-        isLoading && "flex items-center justify-center",
         className
       )}
       onClick={onClick}

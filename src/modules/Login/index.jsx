@@ -19,6 +19,7 @@ import { Oval } from 'react-loader-spinner'
 import { toast } from 'react-toastify'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { Header } from '@/components/Header'
+import { Checkbox } from '@/components/Checkbox'
 const token = '5451078c4d7668b0f60acf3c9d97b15f'
 
 const validationSchema = yup.object({
@@ -129,8 +130,8 @@ export function Login() {
           <HFInput
             name='user_email'
             control={control}
-            placeholder='이메일을 입력해 주세요'
-            label='이메일'
+            placeholder='아이디를 입력해주세요'
+            label='아이디'
             id='email'
           />
           <HFInput
@@ -152,21 +153,28 @@ export function Login() {
             로그인
           </Button>
         </form>
-        <div className='flex items-center justify-center mt-[24px] gap-[20px]'>
-          <button
-            onClick={() => navigate('/find-password')}
-            type='button'
-            className='text-primary-600 text-sm'
-          >
-            비밀번호 찾기
-          </button>
-          <button
-            type='button'
-            className='text-primary-600 text-sm'
-            onClick={() => navigate('/register')}
-          >
-            회원가입
-          </button>
+        <div className='flex items-center mt-[15px] justify-between'>
+          <div className='flex items-center'>
+            <Checkbox />
+            <p className='text-[15px] text-[#5C5F79]'>아이디 저장</p>
+          </div>
+          <div className='flex items-center justify-center gap-[20px]'>
+            <button
+              onClick={() => navigate('/find-id')}
+              type='button'
+              className='text-[#5C5F79] text-sm'
+            >
+              아이디 찾기
+            </button>
+            <div className='border-r border-[#B7C5C8] h-[17px]' />
+            <button
+              type='button'
+              className='text-[#5C5F79] text-sm'
+              onClick={() => navigate('/register')}
+            >
+              비밀번호 찾기
+            </button>
+          </div>
         </div>
         {isLoadingOAuth ? (
           <div className='flex justify-center py-[50px]'>
@@ -189,7 +197,7 @@ export function Login() {
               <button
                 onClick={googleLogin}
                 type='button'
-                className='flex items-center border border-gray-100 border-solid rounded-[10px] py-[14px] px-[16px] w-full'
+                className='flex items-center border border-gray-100 border-solid py-[14px] px-[16px] w-full'
               >
                 <GoogleIcon />
                 <p className='w-full text-[15px] text-center'>
@@ -211,7 +219,7 @@ export function Login() {
                     <button
                       type='button'
                       onClick={onClick}
-                      className='flex items-center border border-gray-100 border-solid rounded-[10px] py-[14px] px-[16px] w-full'
+                      className='flex items-center border border-gray-100 border-solid py-[14px] px-[16px] w-full'
                     >
                       <KakaoIcon />
                       <p className='w-full text-[15px] text-center'>

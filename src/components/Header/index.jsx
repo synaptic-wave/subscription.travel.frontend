@@ -25,25 +25,27 @@ const links = [
 
 export function Header() {
   return (
-    <header className='container'>
-      <div className='flex items-center py-[25px] justify-between'>
-        <NavLink
-          className='text-[34px] font-bold text-primary block leading-9'
-          to='/'
-        >
-          핸디트립
-        </NavLink>
-        <div className='flex items-center gap-2'>
-          {links.map((value, index) => (
-            <>
-              <NavLink className='text-sm' to={value.to}>
-                {value.title}
-              </NavLink>
-              {links.length - 1 !== index && (
-                <div className='h-[10px] w-[1px] bg-[#B7C5C8]' />
-              )}
-            </>
-          ))}
+    <header className='border-b border-[#EAEAF4]'>
+      <div className='container'>
+        <div className='flex items-center py-[25px] justify-between'>
+          <NavLink
+            className='text-[34px] font-bold text-primary block leading-9'
+            to='/'
+          >
+            핸디트립
+          </NavLink>
+          <div className='flex items-center gap-2'>
+            {links.map((value, index) => (
+              <>
+                <NavLink className='text-sm' to={value.to}>
+                  {value.title}
+                </NavLink>
+                {links.length - 1 !== index && (
+                  <div className='h-[10px] w-[1px] bg-[#B7C5C8]' />
+                )}
+              </>
+            ))}
+          </div>
         </div>
       </div>
     </header>

@@ -81,14 +81,14 @@ export function PreviewHotels({ section, isShowPrivacy }) {
                 __html: getDecodedHtml(section.kr_title)
               }}
             ></h5>
-            {isShowPrivacy && (
+            {/* {isShowPrivacy && (
               <button
                 onClick={() => setOpen(true)}
                 className="text-sm border border-gray-100 rounded-[10px] py-[10px] px-[20px] whitespace-nowrap"
               >
                 약관보기
               </button>
-            )}
+            )} */}
           </div>
         }
         tabs={

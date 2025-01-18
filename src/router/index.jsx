@@ -30,6 +30,8 @@ import Banner from "@/modules/Banner";
 import CouponEvent from "@/modules/CouponEvent";
 import GLNBanner from "@/modules/GLNBanner";
 import EasyMembershipRegister from "@/modules/EasyMembership/Register";
+import ThirdPartiesPersonalInformation from "@/modules/Terms/ThirdPartiesPersonalInformation";
+import ThirdPartiesPersonalInformationOption from "@/modules/Terms/ThirdPartiesPersonalInformationOptional";
 
 const Router = () => {
   return (
@@ -94,6 +96,18 @@ const Router = () => {
           path="booking-detail/:id"
           element={<CheckBookingDetail />}
         ></Route>
+
+        <Route path="terms">
+          <Route
+            path="third-parties-personal-information"
+            element={<ThirdPartiesPersonalInformation />}
+          />
+
+          <Route
+            path="third-parties-personal-information-optional"
+            element={<ThirdPartiesPersonalInformationOption />}
+          />
+        </Route>
       </Route>
     </Routes>
   );

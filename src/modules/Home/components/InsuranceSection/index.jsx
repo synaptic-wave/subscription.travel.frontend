@@ -24,13 +24,13 @@ export function Insurance() {
   return (
     <>
       <div className="container">
-        <InsuranceForm
+        {/* <InsuranceForm
           setIsOpenNotFound={setIsOpenNotFound}
           setIsOpenSearchHotel={setIsOpenSearchHotel}
           recommendedLocations={data?.results?.find(
             (item) => item.template === "group-card"
           )}
-        />
+        /> */}
 
         <Banner
           img={bannerImg}
