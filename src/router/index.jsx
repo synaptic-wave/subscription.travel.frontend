@@ -32,6 +32,7 @@ import GLNBanner from "@/modules/GLNBanner";
 import EasyMembershipRegister from "@/modules/EasyMembership/Register";
 import ThirdPartiesPersonalInformation from "@/modules/Terms/ThirdPartiesPersonalInformation";
 import ThirdPartiesPersonalInformationOption from "@/modules/Terms/ThirdPartiesPersonalInformationOptional";
+import StaticMembership from "@/modules/static/Membership";
 
 const Router = () => {
   return (
@@ -96,6 +97,10 @@ const Router = () => {
           path="booking-detail/:id"
           element={<CheckBookingDetail />}
         ></Route>
+
+        <Route path="static">
+          <Route path="membership" element={<StaticMembership />} />
+        </Route>
 
         <Route path="terms">
           <Route
