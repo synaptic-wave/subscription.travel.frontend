@@ -1,8 +1,13 @@
 import classNames from "classnames";
 
-export default function Tabs({ elements, onChangeTab, activeIndex }) {
+export default function Tabs({
+  elements,
+  onChangeTab,
+  activeIndex,
+  className
+}) {
   return (
-    <div className="flex items-center w-full justify-center">
+    <div className={classNames("flex items-center w-full", className)}>
       {elements.map((item, index) => (
         <div className="relative" onClick={() => onChangeTab(index)}>
           <button

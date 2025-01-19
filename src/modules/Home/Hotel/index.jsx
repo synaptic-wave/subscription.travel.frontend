@@ -31,13 +31,13 @@ export function Hotel() {
   return (
     <>
       <div className="container">
-        {/* <TripBoard
+        <TripBoard
           setIsOpenNotFound={setIsOpenNotFound}
           setIsOpenSearchHotel={setIsOpenSearchHotel}
           recommendedLocations={data?.results?.find(
-            (item) => item.template === 'group-card'
+            (item) => item.template === "group-card"
           )}
-        /> */}
+        />
 
         <Banner
           img={bannerImg}

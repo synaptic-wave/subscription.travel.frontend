@@ -12,10 +12,10 @@ const elements = [
   },
   {
     label: "항공"
-  },
-  {
-    label: "여행자보험"
   }
+  // {
+  //   label: "여행자보험"
+  // }
 ];
 
 const renderer = {
@@ -37,26 +37,30 @@ export function Home() {
     <>
       <Header />
       <SubHeader />
-      {/* <div className="container pt-[26px]">
+
+      <div className="container pt-[26px]">
         <Tabs
           activeIndex={activeTab}
           onChangeTab={onChangeTab}
           elements={elements}
+          className="justify-start"
         />
-      </div> */}
+      </div>
 
       <div className="py-[28px]">
-        <div className="w-full">
-          <iframe
-            className="w-full"
-            style={{
-              width: "100%",
-              height: "100vh"
-            }}
-            src="https://b2b.oaas.co.kr/air_oaas/AirRevV2/AirSearch.html?pid=OY01375&mid=12312312&ts=NO#"
-          />
-        </div>
-        <Component />
+        {activeTab === 1 && (
+          <div className="w-full">
+            <iframe
+              className="w-full"
+              style={{
+                width: "100%",
+                height: "100vh"
+              }}
+              src="https://b2b.oaas.co.kr/air_oaas/AirRevV2/AirSearch.html?pid=OY01375&mid=12312312&ts=NO#"
+            />
+          </div>
+        )}
+        {activeTab !== 1 && <Component />}
       </div>
     </>
   );
